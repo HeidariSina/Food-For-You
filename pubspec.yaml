@@ -1,0 +1,39 @@
+name: meals
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Lora
+      fonts:
+        - asset: assets/fonts/Lora-Bold.ttf
+        - asset: assets/fonts/Lora-BoldItalic.ttf
+        - asset: assets/fonts/Lora-Italic.ttf
+        - asset: assets/fonts/Lora-Medium.ttf
+        - asset: assets/fonts/Lora-MediumItalic.ttf
+        - asset: assets/fonts/Lora-Regular.ttf
+        - asset: assets/fonts/Lora-SemiBold.ttf
+        - asset: assets/fonts/Lora-SemiBoldItalic.ttf
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-Bold.ttf
+        - asset: assets/fonts/Dosis-ExtraBold.ttf
+        - asset: assets/fonts/Dosis-ExtraLight.ttf
+        - asset: assets/fonts/Dosis-Light.ttf
+        - asset: assets/fonts/Dosis-Medium.ttf
+        - asset: assets/fonts/Dosis-Regular.ttf
+        - asset: assets/fonts/Dosis-SemiBold.ttf
