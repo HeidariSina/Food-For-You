@@ -2,20 +2,31 @@ import 'package:flutter/material.dart';
 
 class MyCategoryCard extends StatelessWidget {
   final String title;
-  const MyCategoryCard(this.title);
+  final int index;
+  final bool isSelected;
+  final Function func;
+  const MyCategoryCard(this.title, this.isSelected, this.index, this.func,
+      {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(right: 20),
+      width: 100,
+      margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.teal.shade700),
+          color: isSelected
+              ? Theme.of(context).colorScheme.primary
+              : Theme.of(context).colorScheme.onSurface,
+          border: Border.all(color: Theme.of(context).colorScheme.primary),
           borderRadius: BorderRadius.circular(20)),
-      child: OutlinedButton(
-        onPressed: null,
+      child: TextButton(
+        onPressed: () => func(index),
         child: Text(
           title,
-          style: TextStyle(color: Colors.teal.shade700),
+          style: TextStyle(
+              color: isSelected
+                  ? Theme.of(context).colorScheme.onSurface
+                  : Theme.of(context).colorScheme.primary),
         ),
       ),
     );

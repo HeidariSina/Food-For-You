@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:meals/db/meals.dart';
 
 import './component/home.dart';
 import './component/bookmark.dart';
 import './component/meals.dart';
-import './component/shopping.dart';
+import './component/appetizer.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MainApp());
 }
 
@@ -20,14 +23,45 @@ class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: "Dosis"),
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          color: Colors.teal.shade700,
+          iconTheme: const IconThemeData(
+            color: Colors.white,
+          ),
+        ),
+        fontFamily: "Dosis",
+        colorScheme: ColorScheme(
+            brightness: Brightness.light,
+            primary: Colors.teal.shade700,
+            onPrimary: Colors.teal.shade500,
+            secondary: Colors.black87,
+            onSecondary: Colors.black54,
+            error: Colors.red.shade800,
+            onError: Colors.red.shade500,
+            background: Colors.white70,
+            onBackground: Colors.white30,
+            surface: Colors.teal,
+            onSurface: Colors.white),
+        textTheme: const TextTheme(
+          bodySmall: TextStyle(
+            fontSize: 17,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+          bodyMedium: TextStyle(
+            fontSize: 17,
+            color: Colors.white,
+          ),
+        ),
+      ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // appBar: AppBar(),
         body: [
           MyHomePage(),
+          MyAppetizerPage(),
           MyMealsPage(),
-          MyShoppingPage(),
           MyBookMarkPage(),
         ][_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
@@ -41,24 +75,27 @@ class _MainAppState extends State<MainApp> {
               label: "Home",
             ),
             BottomNavigationBarItem(
+              activeIcon: FaIcon(FontAwesomeIcons.wineGlass, size: 30),
+              icon: FaIcon(
+                FontAwesomeIcons.wineGlassEmpty,
+                size: 22,
+              ),
+              label: 'Saved',
+            ),
+            BottomNavigationBarItem(
               icon: Icon(Icons.food_bank_outlined),
               activeIcon: Icon(Icons.food_bank, size: 30),
               label: 'search',
             ),
             BottomNavigationBarItem(
-              activeIcon: Icon(Icons.shopping_bag, size: 30),
-              icon: Icon(Icons.shopping_bag_outlined),
-              label: 'Saved',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.bookmark_outline),
-              activeIcon: Icon(Icons.bookmark, size: 30),
+              icon: Icon(Icons.cake_outlined),
+              activeIcon: Icon(Icons.cake, size: 30),
               label: 'bookmark',
             ),
           ],
           currentIndex: _selectedIndex,
-          selectedItemColor: Colors.teal[700],
-          unselectedItemColor: Colors.teal[500],
+          selectedItemColor: Colors.teal.shade700,
+          unselectedItemColor: Colors.teal.shade500,
           type: BottomNavigationBarType.shifting,
           elevation: 0.0,
           onTap: (int index) {

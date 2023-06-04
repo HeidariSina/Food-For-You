@@ -1,21 +1,31 @@
 import './ingredients.dart';
 
-enum Category { breakfast, japanese, iranian }
+List<String> category = [
+  "All",
+  "Breakfast",
+  "Iranian",
+  "Latin",
+  "Fast Food",
+  "Japanese",
+];
 
 class Meals {
   String name;
   String difficulty;
   String url;
   Map<Ingredients, String> ingredients;
-  Category category;
+  String category;
   String description;
+  String time;
+  bool isLoved;
 
   Meals(
-    this.name,
-    this.difficulty,
-    this.url,
-    this.ingredients,
-    this.category,
-    this.description,
-  );
+      {required this.name,
+      required this.difficulty,
+      required this.url,
+      required this.ingredients,
+      required this.category,
+      required this.description,
+      required this.time,
+      required this.isLoved});
 }
