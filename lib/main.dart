@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import './db/meals.dart';
+import './db/dessert.dart';
+import './db/appetizer.dart';
+
 import './component/home.dart';
 import './component/meals.dart';
 import './component/appetizer.dart';
@@ -60,9 +63,9 @@ class _MainAppState extends State<MainApp> {
         // appBar: AppBar(),
         body: [
           MyHomePage(),
-          MyAppetizerPage("Appetizer", myMeals, mainDishCategories),
+          MyAppetizerPage("Appetizer", myAppetizer, appetizerCategories),
           MyMealsPage("Main Dish", myMeals, mainDishCategories),
-          MyDessertPage("Dessert", myMeals, mainDishCategories),
+          MyDessertPage("Dessert", myDessert, dessertCategories),
         ][_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,

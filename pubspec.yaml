@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.5
   font_awesome_flutter: ^10.4.0
-  icon_forest: ^1.1.8
 
 dev_dependencies:
   flutter_test:
@@ -21,6 +21,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/BAE.jpeg
+
+    - assets/svg/egg.svg
   fonts:
     - family: Lora
       fonts:

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../component/one_meal.dart';
-
 import '../class/meals.dart';
 
 class MealCard extends StatelessWidget {
@@ -25,7 +24,7 @@ class MealCard extends StatelessWidget {
           style: const ButtonStyle(elevation: MaterialStatePropertyAll(0)),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => OneMeal(index)));
+                MaterialPageRoute(builder: (context) => OneMeal(meal, index)));
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -33,6 +32,7 @@ class MealCard extends StatelessWidget {
               Text(
                 style: Theme.of(context).textTheme.bodySmall,
                 meal.name,
+                textAlign: TextAlign.center,
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),

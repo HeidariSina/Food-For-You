@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+import '../class/meals.dart';
 
 //
-import '../db/meals.dart';
 
 class OneMeal extends StatelessWidget {
+  final Meals myMeals;
   final int index;
-  const OneMeal(this.index, {super.key});
+  const OneMeal(this.myMeals, this.index, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +16,7 @@ class OneMeal extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          myMeals[index].name,
+          myMeals.name,
           style: const TextStyle(color: Colors.white),
         ),
       ),
@@ -27,7 +30,7 @@ class OneMeal extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
-                    myMeals[index].url,
+                    myMeals.url,
                     width: MediaQuery.of(context).size.width,
                     fit: BoxFit.fill,
                     colorBlendMode: BlendMode.colorBurn,
@@ -56,7 +59,7 @@ class OneMeal extends StatelessWidget {
                                 color: Theme.of(context).colorScheme.onSurface,
                               ),
                               Text(
-                                myMeals[index].difficulty,
+                                myMeals.difficulty,
                                 style: Theme.of(context).textTheme.bodyMedium,
                               ),
                             ],
@@ -68,7 +71,7 @@ class OneMeal extends StatelessWidget {
                                 color: Theme.of(context).colorScheme.onSurface,
                               ),
                               Text(
-                                myMeals[index].time,
+                                myMeals.time,
                                 style: Theme.of(context).textTheme.bodyMedium,
                               ),
                             ],
@@ -81,31 +84,20 @@ class OneMeal extends StatelessWidget {
                           "Ingredients :",
                         ),
                       ),
-                      ...List.generate(myMeals[index].ingredients.length,
+                      ...List.generate(myMeals.ingredients.length,
                           (innerIndex) {
                         return ListTile(
-                          leading: Icon(
-                            myMeals[index]
-                                .ingredients
-                                .keys
-                                .toList()[innerIndex]
-                                .icon,
+                          leading: SvgPicture.asset(
                             color: Theme.of(context).colorScheme.onSurface,
+                            myMeals.ingredients.keys.toList()[innerIndex].url,
                           ),
                           title: Text(
-                            myMeals[index]
-                                .ingredients
-                                .keys
-                                .toList()[innerIndex]
-                                .name,
+                            myMeals.ingredients.keys.toList()[innerIndex].name,
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface),
                           ),
                           trailing: Text(
-                            myMeals[index]
-                                .ingredients
-                                .values
-                                .toList()[innerIndex],
+                            myMeals.ingredients.values.toList()[innerIndex],
                             style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface),
                           ),
@@ -116,7 +108,7 @@ class OneMeal extends StatelessWidget {
                         child: const Text("Description :"),
                       ),
                       Text(
-                        myMeals[index].description,
+                        myMeals.description,
                         textAlign: TextAlign.justify,
                       )
                     ]),

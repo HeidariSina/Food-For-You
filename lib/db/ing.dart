@@ -1,7 +1,7 @@
 import '../class/ingredients.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-Ingredients egg = Ingredients("Egg", FontAwesomeIcons.egg);
-Ingredients bacon = Ingredients("Bacon", FontAwesomeIcons.piggyBank);
-Ingredients beef = Ingredients("Beef", FontAwesomeIcons.cow);
-Ingredients apple = Ingredients("Apple", FontAwesomeIcons.apple);
+Ingredients egg = Ingredients("Egg", "assets/svg/egg.svg");
+Ingredients bacon = Ingredients("Bacon", "assets/svg/egg.svg");
+Ingredients beef = Ingredients("Beef", "assets/svg/egg.svg");
+Ingredients apple = Ingredients("Apple", "assets/svg/egg.svg");
+Ingredients salt = Ingredients("Salt", "assets/svg/egg.svg");
