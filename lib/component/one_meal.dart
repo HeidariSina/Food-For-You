@@ -81,41 +81,36 @@ class OneMeal extends StatelessWidget {
                           "Ingredients :",
                         ),
                       ),
-                      ListView.builder(
-                        shrinkWrap: true,
-                        itemCount: myMeals[index].ingredients.length,
-                        itemBuilder: (context, innerIndex) {
-                          return ListTile(
-                            leading: Icon(
-                              myMeals[index]
-                                  .ingredients
-                                  .keys
-                                  .toList()[innerIndex]
-                                  .icon,
-                              color: Theme.of(context).colorScheme.onSurface,
-                            ),
-                            title: Text(
-                              myMeals[index]
-                                  .ingredients
-                                  .keys
-                                  .toList()[innerIndex]
-                                  .name,
-                              style: TextStyle(
-                                  color:
-                                      Theme.of(context).colorScheme.onSurface),
-                            ),
-                            trailing: Text(
-                              myMeals[index]
-                                  .ingredients
-                                  .values
-                                  .toList()[innerIndex],
-                              style: TextStyle(
-                                  color:
-                                      Theme.of(context).colorScheme.onSurface),
-                            ),
-                          );
-                        },
-                      ),
+                      ...List.generate(myMeals[index].ingredients.length,
+                          (innerIndex) {
+                        return ListTile(
+                          leading: Icon(
+                            myMeals[index]
+                                .ingredients
+                                .keys
+                                .toList()[innerIndex]
+                                .icon,
+                            color: Theme.of(context).colorScheme.onSurface,
+                          ),
+                          title: Text(
+                            myMeals[index]
+                                .ingredients
+                                .keys
+                                .toList()[innerIndex]
+                                .name,
+                            style: TextStyle(
+                                color: Theme.of(context).colorScheme.onSurface),
+                          ),
+                          trailing: Text(
+                            myMeals[index]
+                                .ingredients
+                                .values
+                                .toList()[innerIndex],
+                            style: TextStyle(
+                                color: Theme.of(context).colorScheme.onSurface),
+                          ),
+                        );
+                      }),
                       Container(
                         margin: const EdgeInsets.only(bottom: 10),
                         child: const Text("Description :"),

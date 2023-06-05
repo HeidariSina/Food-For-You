@@ -4,17 +4,17 @@ import '../class/meals.dart';
 import '../sideComponents/category_card.dart';
 import '../sideComponents/meals_card.dart';
 
-class MyMealsPage extends StatefulWidget {
+class MyDessertPage extends StatefulWidget {
   final String header;
   final List<Meals> meals;
   final List<String> category;
-  const MyMealsPage(this.header, this.meals, this.category, {super.key});
+  const MyDessertPage(this.header, this.meals, this.category, {super.key});
 
   @override
-  State<MyMealsPage> createState() => _MyMealsPageState();
+  State<MyDessertPage> createState() => _MyDessertPage();
 }
 
-class _MyMealsPageState extends State<MyMealsPage> {
+class _MyDessertPage extends State<MyDessertPage> {
   int _selectedindex = 0;
   List<Meals> _selectedMeals = [];
   TextEditingController _textInputControl = TextEditingController();

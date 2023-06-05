@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:meals/db/meals.dart';
 
+import './db/meals.dart';
 import './component/home.dart';
-import './component/bookmark.dart';
 import './component/meals.dart';
 import './component/appetizer.dart';
+import './component/dessert.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -60,9 +60,9 @@ class _MainAppState extends State<MainApp> {
         // appBar: AppBar(),
         body: [
           MyHomePage(),
-          MyAppetizerPage(),
-          MyMealsPage(),
-          MyBookMarkPage(),
+          MyAppetizerPage("Appetizer", myMeals, mainDishCategories),
+          MyMealsPage("Main Dish", myMeals, mainDishCategories),
+          MyDessertPage("Dessert", myMeals, mainDishCategories),
         ][_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
