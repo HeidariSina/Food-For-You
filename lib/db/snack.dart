@@ -1,19 +1,20 @@
 import '../class/meals.dart';
 import './ing.dart';
 
-List<String> dessertCategories = [
+List<String> snackCategories = [
   "All",
   "Cakes",
   "Cookies",
   "Biscuits",
   "Pastries",
-  "Custards and Puddings",
+  "Custards",
+  "Puddings",
   "Deep-fried",
   "Frozen",
   "Gelatin",
 ];
 
-List<Meals> myDessert = [
+List<Meals> mySnacks = [
   Meals(
     name: "Chocolate Chip Cookies",
     difficulty: "Easy",

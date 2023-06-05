@@ -88,8 +88,9 @@ class OneMeal extends StatelessWidget {
                           (innerIndex) {
                         return ListTile(
                           leading: SvgPicture.asset(
-                            color: Theme.of(context).colorScheme.onSurface,
                             myMeals.ingredients.keys.toList()[innerIndex].url,
+                            height: 30,
+                            width: 30,
                           ),
                           title: Text(
                             myMeals.ingredients.keys.toList()[innerIndex].name,

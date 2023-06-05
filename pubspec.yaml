@@ -22,7 +22,28 @@ flutter:
   assets:
     - assets/images/BAE.jpeg
 
+    - assets/svg/apple.svg
+    - assets/svg/backing_soda.svg
+    - assets/svg/bacon.svg
+    - assets/svg/banana.svg
+    - assets/svg/beef.svg
+    - assets/svg/bell_pepper.svg
+    - assets/svg/biscuit.svg
+    - assets/svg/bread.svg
+    - assets/svg/cabbage.svg
+    - assets/svg/chicken.svg
     - assets/svg/egg.svg
+    - assets/svg/fish.svg
+    - assets/svg/flour.svg
+    - assets/svg/meat.svg
+    - assets/svg/milk.svg
+    - assets/svg/pepper.svg
+    - assets/svg/red_pepper.svg
+    - assets/svg/rise.svg
+    - assets/svg/salt.svg
+    - assets/svg/sausage.svg
+    - assets/svg/zaferan.svg
+
   fonts:
     - family: Lora
       fonts:

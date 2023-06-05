@@ -5,10 +5,9 @@ import '../sideComponents/category_card.dart';
 import '../sideComponents/meals_card.dart';
 
 class MyMealsPage extends StatefulWidget {
-  final String header;
   final List<Meals> meals;
   final List<String> category;
-  const MyMealsPage(this.header, this.meals, this.category, {super.key});
+  const MyMealsPage(this.meals, this.category, {super.key});
 
   @override
   State<MyMealsPage> createState() => _MyMealsPageState();
@@ -62,7 +61,7 @@ class _MyMealsPageState extends State<MyMealsPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(widget.header,
+              Text("Main Dish",
                   style: TextStyle(
                       fontSize: 30,
                       color: Theme.of(context).colorScheme.surface)),

@@ -4,17 +4,16 @@ import '../class/meals.dart';
 import '../sideComponents/category_card.dart';
 import '../sideComponents/meals_card.dart';
 
-class MyAppetizerPage extends StatefulWidget {
-  final String header;
+class MyDrinkPage extends StatefulWidget {
   final List<Meals> meals;
   final List<String> category;
-  const MyAppetizerPage(this.header, this.meals, this.category, {super.key});
+  const MyDrinkPage(this.meals, this.category, {super.key});
 
   @override
-  State<MyAppetizerPage> createState() => _MyAppetizerPage();
+  State<MyDrinkPage> createState() => _MyDrinkPage();
 }
 
-class _MyAppetizerPage extends State<MyAppetizerPage> {
+class _MyDrinkPage extends State<MyDrinkPage> {
   int _selectedindex = 0;
   List<Meals> _selectedMeals = [];
   TextEditingController _textInputControl = TextEditingController();
@@ -62,7 +61,7 @@ class _MyAppetizerPage extends State<MyAppetizerPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(widget.header,
+              Text("Drinks",
                   style: TextStyle(
                       fontSize: 30,
                       color: Theme.of(context).colorScheme.surface)),
@@ -114,7 +113,7 @@ class _MyAppetizerPage extends State<MyAppetizerPage> {
                   itemCount: widget.category.length,
                 ),
               ),
-              Text("Meals :",
+              Text("Drinks :",
                   style: TextStyle(
                       fontSize: 17,
                       color: Theme.of(context).colorScheme.primary)),

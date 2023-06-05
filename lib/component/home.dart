@@ -17,7 +17,7 @@ class MyHomePage extends StatelessWidget {
 
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+        padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: Column(
           children: [
             Text(
@@ -35,13 +35,18 @@ class MyHomePage extends StatelessWidget {
               children: [
                 Text(
                   "popular ${timeOfDay} recipes",
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
                 ),
                 TextButton(
                   onPressed: null,
                   child: Text(
                     "View All",
-                    style: TextStyle(fontSize: 18),
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Theme.of(context).colorScheme.primary),
                   ),
                 ),
               ],
