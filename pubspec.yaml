@@ -21,6 +21,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/BAE.jpeg
+    - assets/images/CCC.jpg
 
     - assets/svg/apple.svg
     - assets/svg/backing_soda.svg
@@ -30,7 +31,10 @@ flutter:
     - assets/svg/bell_pepper.svg
     - assets/svg/biscuit.svg
     - assets/svg/bread.svg
+    - assets/svg/brown_sugar.svg
+    - assets/svg/butter.svg
     - assets/svg/cabbage.svg
+    - assets/svg/cheese.svg
     - assets/svg/chicken.svg
     - assets/svg/egg.svg
     - assets/svg/fish.svg
@@ -42,6 +46,8 @@ flutter:
     - assets/svg/rise.svg
     - assets/svg/salt.svg
     - assets/svg/sausage.svg
+    - assets/svg/sugar.svg
+    - assets/svg/vanilla.svg
     - assets/svg/zaferan.svg
 
   fonts:

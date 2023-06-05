@@ -47,16 +47,20 @@ class _MainAppState extends State<MainApp> {
             surface: Colors.teal,
             onSurface: Colors.white),
         textTheme: const TextTheme(
-          bodySmall: TextStyle(
-            fontSize: 17,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-          bodyMedium: TextStyle(
-            fontSize: 17,
-            color: Colors.white,
-          ),
-        ),
+            bodySmall: TextStyle(
+              fontSize: 17,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+            bodyMedium: TextStyle(
+              fontSize: 17,
+              color: Colors.white,
+            ),
+            bodyLarge: TextStyle(
+              fontSize: 22,
+              fontStyle: FontStyle.italic,
+              color: Colors.white,
+            )),
       ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(

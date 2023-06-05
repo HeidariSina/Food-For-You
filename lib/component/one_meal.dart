@@ -80,8 +80,9 @@ class OneMeal extends StatelessWidget {
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 10),
-                        child: const Text(
+                        child: Text(
                           "Ingredients :",
+                          style: Theme.of(context).textTheme.bodyLarge,
                         ),
                       ),
                       ...List.generate(myMeals.ingredients.length,
@@ -106,11 +107,15 @@ class OneMeal extends StatelessWidget {
                       }),
                       Container(
                         margin: const EdgeInsets.only(bottom: 10),
-                        child: const Text("Description :"),
+                        child: Text(
+                          "Description :",
+                          style: Theme.of(context).textTheme.bodyLarge,
+                        ),
                       ),
                       Text(
                         myMeals.description,
                         textAlign: TextAlign.justify,
+                        style: TextStyle(height: 2),
                       )
                     ]),
               )

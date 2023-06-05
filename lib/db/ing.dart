@@ -10,7 +10,11 @@ Ingredients bellPepper =
     Ingredients("Bell Pepper", "assets/svg/bell_pepper.svg");
 Ingredients biscuit = Ingredients("Biscuit", "assets/svg/biscuit.svg");
 Ingredients bread = Ingredients("Bread", "assets/svg/bread.svg");
+Ingredients brownSugar =
+    Ingredients("Brown Sugar", "assets/svg/brown_sugar.svg");
+Ingredients butter = Ingredients("Butter", "assets/svg/butter.svg");
 Ingredients cabbage = Ingredients("Cabbage", "assets/svg/cabbage.svg");
+Ingredients cheese = Ingredients("Cheese", "assets/svg/cheese.svg");
 Ingredients chicken = Ingredients("Chicken", "assets/svg/chicken.svg");
 Ingredients egg = Ingredients("Egg", "assets/svg/egg.svg");
 Ingredients fish = Ingredients("Fish", "assets/svg/fish.svg");
@@ -22,4 +26,6 @@ Ingredients redPepper = Ingredients("Red Pepper", "assets/svg/red_pepper.svg");
 Ingredients rise = Ingredients("Rise", "assets/svg/rise.svg");
 Ingredients salt = Ingredients("Salt", "assets/svg/salt.svg");
 Ingredients sausage = Ingredients("Sausage", "assets/svg/sausage.svg");
+Ingredients sugar = Ingredients("Sugar", "assets/svg/sugar.svg");
+Ingredients vanilla = Ingredients("Vanilla", "assets/svg/vanilla.svg");
 Ingredients zaferan = Ingredients("Zaferan", "assets/svg/zaferan.svg");
