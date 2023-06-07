@@ -21,11 +21,14 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/BAE.jpeg
+    - assets/images/BP.jpg
     - assets/images/CCC.jpg
     - assets/images/LLC.jpg
     - assets/images/CCF.jpg
+    - assets/images/P.jpg
 
     - assets/svg/apple.svg
+    - assets/svg/backing_powder.svg
     - assets/svg/backing_soda.svg
     - assets/svg/bacon.svg
     - assets/svg/banana.svg

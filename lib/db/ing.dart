@@ -1,6 +1,8 @@
 import '../class/ingredients.dart';
 
 Ingredients apple = Ingredients("Apple", "assets/svg/apple.svg");
+Ingredients backingPowder =
+    Ingredients("Backing Powder", "assets/svg/backing_powder.svg");
 Ingredients backingSoda =
     Ingredients("Backing Soda", "assets/svg/backing_soda.svg");
 Ingredients bacon = Ingredients("Bacon", "assets/svg/bacon.svg");
