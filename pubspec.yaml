@@ -36,11 +36,15 @@ flutter:
     - assets/svg/cabbage.svg
     - assets/svg/cheese.svg
     - assets/svg/chicken.svg
+    - assets/svg/chocolate.svg
+    - assets/svg/cookie.svg
     - assets/svg/egg.svg
     - assets/svg/fish.svg
     - assets/svg/flour.svg
     - assets/svg/meat.svg
     - assets/svg/milk.svg
+    - assets/svg/nuts.svg
+    - assets/svg/oil.svg
     - assets/svg/pepper.svg
     - assets/svg/red_pepper.svg
     - assets/svg/rise.svg
@@ -48,6 +52,7 @@ flutter:
     - assets/svg/sausage.svg
     - assets/svg/sugar.svg
     - assets/svg/vanilla.svg
+    - assets/svg/water.svg
     - assets/svg/zaferan.svg
 
   fonts:

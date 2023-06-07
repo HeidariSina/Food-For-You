@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyCard extends StatelessWidget {
   final Color col;
-  const MyCard(this.col);
+  const MyCard(this.col, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MyCard extends StatelessWidget {
           borderRadius: const BorderRadius.all(Radius.circular(20)),
           color: col),
       child: Column(
-        children: [
+        children: const [
           Text(
             "data",
             style: TextStyle(color: Colors.white),

@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class Ingredients {
   String name;
   String url;

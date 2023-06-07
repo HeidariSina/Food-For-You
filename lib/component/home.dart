@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "popular ${timeOfDay} recipes",
+                  "popular $timeOfDay recipes",
                   style: TextStyle(
                     fontSize: 20,
                     color: Theme.of(context).colorScheme.primary,
