@@ -89,6 +89,29 @@ List<Meals> mySnacks = [
         "Step 1 :\nHeat the oven to 180C/160C fan/gas 4. Oil and line the base and sides of two 20cm cake tins with baking parchment. Whisk the oil, yogurt, eggs, vanilla and zest in a jug. Mix the flour, sugar, cinnamon and nutmeg with a good pinch of salt in a bowl. Squeeze any lumps of sugar through your fingers, shaking the bowl a few times to bring the lumps to the surface.\n\nStep 2 :\nAdd the wet ingredients to the dry, along with the carrots, raisins and half the nuts, if using. Mix well to combine, then divide between the tins.\n\nStep 3 :\nBake for 25-30 mins or until a skewer inserted into the centre of the cake comes out clean. If any wet mixture clings to the skewer, return to the oven for 5 mins, then check again. Leave to cool in the tins.\n\nStep 4 :\nTo make the icing, beat the butter and sugar together until smooth. Add half the soft cheese and beat again, then add the rest (adding it bit by bit prevents the icing from splitting). Remove the cakes from the tins and sandwich together with half the icing. Top with the remaining icing and scatter with the remaining walnuts. Will keep in the fridge for up to five days. Best eaten at room temperature.",
     time: "1h 5m",
   ),
+  Meals(
+    name: "Chocolate Cake",
+    difficulty: "Easy",
+    url: "assets/images/CC.jpg",
+    ingredients: {
+      oil: "150ml",
+      flour: "175g",
+      cocoa: "2 Teaspoon",
+      backingSoda: "1 Teaspoon",
+      sugar: "150g",
+      milk: "150ml",
+      egg: "2",
+      info: "For the Icing",
+      butter: "100g",
+      sugarD1: "225g",
+      cocoaD1: "40g",
+      milkD1: "2 1/2 Tablespoon"
+    },
+    category: "Cakes",
+    description:
+        "Step 1 : \nHeat the oven to 180C/160C fan/gas 4. Oil and line the base of two 18cm sandwich tins. Sieve the flour, cocoa powder and bicarbonate of soda into a bowl. Add the caster sugar and mix well\n\nStep 2 :\nMake a well in the centre and add the golden syrup, eggs, sunflower oil and milk. Beat well with an electric whisk until smooth.\n\nStep 3 :\nPour the mixture into the two tins and bake for 25-30 mins until risen and firm to the touch. Remove from oven, leave to cool for 10 mins before turning out onto a cooling rack.\n\nStep 4 :\nTo make the icing, beat the unsalted butter in a bowl until soft. Gradually sieve and beat in the icing sugar and cocoa powder, then add enough of the milk to make the icing fluffy and spreadable.\n\nStep 5 :\nSandwich the two cakes together with the butter icing and cover the sides and the top of the cake with more icing.",
+    time: "55m",
+  ),
 ];
 
       // vanilla:"",

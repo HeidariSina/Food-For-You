@@ -144,7 +144,7 @@ class _MySnacksPage extends State<MySnacksPage> {
                       height: MediaQuery.of(context).size.height * 0.68,
                       width: MediaQuery.of(context).size.width,
                       child: GridView.count(
-                        mainAxisSpacing: 20,
+                        mainAxisSpacing: 0,
                         childAspectRatio: 0.7,
                         crossAxisSpacing: 10,
                         crossAxisCount: 2,
