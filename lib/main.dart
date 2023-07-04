@@ -111,25 +111,6 @@ class _MainAppState extends State<MainApp> {
             });
           },
         ),
-
-        //     NavigationDestination(
-        //       icon: Icon(Icons.search),
-        //       selectedIcon: Icon(Icons.search_outlined),
-        //       label: 'Commute',
-        //     ),
-        //     NavigationDestination(
-        //       icon: Icon(Icons.bookmark_outline),
-        //       selectedIcon: Icon(Icons.bookmark),
-        //       label: 'Explore',
-        //     ),
-        //     NavigationDestination(
-        //       selectedIcon: Icon(Icons.shopping_bag),
-        //       icon: Icon(Icons.shopping_bag_outlined),
-        //       label: 'Saved',
-        //     ),
-        //   ],
-        //   backgroundColor: Colors.amber,
-        // ),
       ),
     );
   }

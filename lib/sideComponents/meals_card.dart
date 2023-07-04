@@ -24,7 +24,7 @@ class MealCard extends StatelessWidget {
           style: const ButtonStyle(elevation: MaterialStatePropertyAll(0)),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => OneMeal(meal, index)));
+                MaterialPageRoute(builder: (context) => OneMeal(meal)));
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,

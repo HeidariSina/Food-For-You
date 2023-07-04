@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import '../db/drink.dart';
+import '../db/meals.dart';
+import '../db/snack.dart';
 import '../sideComponents/myCard.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
-
   String timeOfDay = "breakfast";
   int nowHour = DateTime.now().hour;
-
   @override
   Widget build(BuildContext context) {
     if (nowHour > 11 && nowHour < 16) {
@@ -16,6 +17,7 @@ class MyHomePage extends StatelessWidget {
     }
 
     return SafeArea(
+        child: SingleChildScrollView(
       child: Container(
         padding: const EdgeInsets.only(top: 10, left: 10, right: 10),
         child: Column(
@@ -51,10 +53,29 @@ class MyHomePage extends StatelessWidget {
                 ),
               ],
             ),
-            MyCard(Colors.black),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.68,
+              width: MediaQuery.of(context).size.width,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                // children: [
+                //   MyCard(mySnacks[0], true, 0),
+                //   MyCard(mySnacks[0], false, 1),
+                //   MyCard(mySnacks[0], false, 2)
+                // ],
+                itemBuilder: (contex, index) {
+                  if (index == 0) {
+                    return (MyCard(mySnacks[0], true, index));
+                  } else {
+                    return (MyCard(mySnacks[0], false, index));
+                  }
+                },
+                itemCount: 3,
+              ),
+            ),
           ],
         ),
       ),
-    );
+    ));
   }
 }
