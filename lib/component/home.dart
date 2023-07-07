@@ -5,15 +5,32 @@ import '../db/snack.dart';
 import '../sideComponents/myCard.dart';
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({super.key});
-  String timeOfDay = "breakfast";
+  final Function func;
+  int index = 2;
+  int secIndex = 0;
+  MyHomePage(this.func, {super.key});
+  String timeOfDay = "";
   int nowHour = DateTime.now().hour;
   @override
   Widget build(BuildContext context) {
-    if (nowHour > 11 && nowHour < 16) {
-      timeOfDay = "lunch";
-    } else if (nowHour > 16 || nowHour < 3) {
-      timeOfDay = "dinner";
+    // BreakFast
+    if (nowHour >= 6 && nowHour < 10) {
+      timeOfDay = mainDishCategories[1];
+      index = 2;
+    } // Lunch Or Dinner
+    else if ((nowHour >= 12 && nowHour < 15) ||
+        (nowHour >= 19 && nowHour <= 21)) {
+      timeOfDay = mainDishCategories[2];
+      index = 2;
+    } // Snacks
+    else if ((nowHour >= 10 && nowHour < 11) ||
+        (nowHour >= 15 && nowHour < 17) ||
+        (nowHour >= 22 || nowHour < 1)) {
+      timeOfDay = snackCategories[1];
+      index = 3;
+    } else {
+      timeOfDay = drinkCategories[0];
+      index = 1;
     }
 
     return SafeArea(
@@ -36,14 +53,14 @@ class MyHomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  "popular $timeOfDay recipes",
+                  "Popular $timeOfDay Recipes",
                   style: TextStyle(
                     fontSize: 20,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                 ),
                 TextButton(
-                  onPressed: null,
+                  onPressed: () => func(index, secIndex),
                   child: Text(
                     "View All",
                     style: TextStyle(

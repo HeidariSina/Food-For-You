@@ -7,7 +7,11 @@ import '../sideComponents/meals_card.dart';
 class MyMealsPage extends StatefulWidget {
   final List<Meals> meals;
   final List<String> category;
-  const MyMealsPage(this.meals, this.category, {super.key});
+  final int index;
+  final Function func;
+
+  const MyMealsPage(this.meals, this.category, this.index, this.func,
+      {super.key});
 
   @override
   State<MyMealsPage> createState() => _MyMealsPageState();
@@ -21,7 +25,16 @@ class _MyMealsPageState extends State<MyMealsPage> {
   @override
   void initState() {
     super.initState();
-    _selectedMeals = widget.meals;
+    _selectedindex = widget.index;
+    if (_selectedindex == 0) {
+      _selectedMeals = widget.meals;
+    } else {
+      _selectedMeals = widget.meals.where(
+        (element) {
+          return element.category == widget.category[_selectedindex];
+        },
+      ).toList();
+    }
   }
 
   void changeSelectedIndex(int index) {
@@ -37,6 +50,7 @@ class _MyMealsPageState extends State<MyMealsPage> {
       }
       _selectedindex = index;
     });
+    widget.func(index);
   }
 
   void _sumbitInputFromSearch() {

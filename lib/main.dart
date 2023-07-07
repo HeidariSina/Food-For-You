@@ -11,7 +11,6 @@ import './component/drinks.dart';
 import './component/snack.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MainApp());
 }
 
@@ -22,7 +21,44 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> {
-  int _selectedIndex = 0;
+  int _outSideIndex = 0;
+  int _drinksIndex = 0;
+  int _mealsIndex = 0;
+  int _snacksIndex = 0;
+
+  void changeOutSideIndex(int ind, int secIndex) {
+    setState(() {
+      if (ind == 1) {
+        _outSideIndex = ind;
+        _drinksIndex = secIndex;
+      } else if (ind == 2) {
+        _outSideIndex = ind;
+        _mealsIndex = secIndex;
+      } else {
+        _outSideIndex = ind;
+        _snacksIndex = secIndex;
+      }
+    });
+  }
+
+  void changeMealIndex(int index) {
+    setState(() {
+      _mealsIndex = index;
+    });
+  }
+
+  void changeDrinkIndex(int index) {
+    setState(() {
+      _drinksIndex = index;
+    });
+  }
+
+  void changeSnackIndex(int index) {
+    setState(() {
+      _snacksIndex = index;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -66,11 +102,14 @@ class _MainAppState extends State<MainApp> {
       home: Scaffold(
         // appBar: AppBar(),
         body: [
-          MyHomePage(),
-          MyDrinkPage(myDrinks, drinkCategories),
-          MyMealsPage(myMeals, mainDishCategories),
-          MySnacksPage(mySnacks, snackCategories),
-        ][_selectedIndex],
+          MyHomePage(changeOutSideIndex),
+          MyDrinkPage(
+              myDrinks, drinkCategories, _drinksIndex, changeDrinkIndex),
+          MyMealsPage(
+              myMeals, mainDishCategories, _mealsIndex, changeMealIndex),
+          MySnacksPage(
+              mySnacks, snackCategories, _snacksIndex, changeSnackIndex),
+        ][_outSideIndex],
         bottomNavigationBar: BottomNavigationBar(
           showSelectedLabels: false,
           showUnselectedLabels: false,
@@ -100,14 +139,14 @@ class _MainAppState extends State<MainApp> {
               label: 'bookmark',
             ),
           ],
-          currentIndex: _selectedIndex,
+          currentIndex: _outSideIndex,
           selectedItemColor: Colors.teal.shade700,
           unselectedItemColor: Colors.teal.shade500,
           type: BottomNavigationBarType.shifting,
           elevation: 0.0,
           onTap: (int index) {
             setState(() {
-              _selectedIndex = index;
+              _outSideIndex = index;
             });
           },
         ),

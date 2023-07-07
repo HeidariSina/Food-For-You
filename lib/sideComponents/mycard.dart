@@ -12,11 +12,11 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final wid = MediaQuery.of(context).size.width;
-    var myMargin;
+    var myMargin = const EdgeInsets.only();
     if (isFirst) {
-      myMargin = EdgeInsets.only(top: 10, left: 10, bottom: 10);
+      myMargin = const EdgeInsets.only(top: 10, left: 10, bottom: 10);
     } else {
-      myMargin = EdgeInsets.only(top: 10, bottom: 10);
+      myMargin = const EdgeInsets.only(top: 10, bottom: 10);
     }
     return GestureDetector(
       onTap: () {
