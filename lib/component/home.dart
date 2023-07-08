@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../class/meals.dart';
+import 'dart:math';
+
 import '../db/drink.dart';
 import '../db/meals.dart';
 import '../db/snack.dart';
@@ -13,25 +16,57 @@ class MyHomePage extends StatelessWidget {
   int nowHour = DateTime.now().hour;
   @override
   Widget build(BuildContext context) {
+    var random = Random();
+    int randomNumber;
+    List<Meals> homePageMeals;
     // BreakFast
     if (nowHour >= 6 && nowHour < 10) {
       timeOfDay = mainDishCategories[1];
+      secIndex = 1;
       index = 2;
+      homePageMeals = myMeals.where(
+        (element) {
+          return element.category == timeOfDay;
+        },
+      ).toList();
     } // Lunch Or Dinner
     else if ((nowHour >= 12 && nowHour < 15) ||
         (nowHour >= 19 && nowHour <= 21)) {
-      timeOfDay = mainDishCategories[2];
+      randomNumber = random.nextInt(mainDishCategories.length - 2) + 2;
+      timeOfDay = mainDishCategories[randomNumber];
+      secIndex = randomNumber;
       index = 2;
+      homePageMeals = myMeals.where(
+        (element) {
+          return element.category == timeOfDay;
+        },
+      ).toList();
     } // Snacks
     else if ((nowHour >= 10 && nowHour < 11) ||
         (nowHour >= 15 && nowHour < 17) ||
         (nowHour >= 22 || nowHour < 1)) {
-      timeOfDay = snackCategories[1];
+      randomNumber = random.nextInt(snackCategories.length - 1) + 1;
+      timeOfDay = snackCategories[randomNumber];
+      secIndex = randomNumber;
       index = 3;
-    } else {
-      timeOfDay = drinkCategories[0];
+      homePageMeals = mySnacks.where(
+        (element) {
+          return element.category == timeOfDay;
+        },
+      ).toList();
+    } // Drinks
+    else {
+      randomNumber = random.nextInt(drinkCategories.length - 1) + 1;
+      timeOfDay = drinkCategories[randomNumber];
+      secIndex = randomNumber;
       index = 1;
+      homePageMeals = myDrinks.where(
+        (element) {
+          return element.category == timeOfDay;
+        },
+      ).toList();
     }
+    homePageMeals.shuffle();
 
     return SafeArea(
         child: SingleChildScrollView(
@@ -87,7 +122,7 @@ class MyHomePage extends StatelessWidget {
                     return (MyCard(mySnacks[0], false, index));
                   }
                 },
-                itemCount: 3,
+                itemCount: 4,
               ),
             ),
           ],

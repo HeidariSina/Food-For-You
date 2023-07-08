@@ -28,7 +28,7 @@ class MyCard extends StatelessWidget {
         transform: isFirst
             ? null
             : Matrix4.translationValues(
-                (-wid * 0.1) + (-wid * (index - 1) * 0.1), 0.0, 0.0),
+                (-wid * 0.05) + (-wid * (index - 1) * 0.05), 0.0, 0.0),
         width: MediaQuery.of(context).size.width * 0.6,
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
