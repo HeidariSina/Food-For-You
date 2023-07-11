@@ -5,16 +5,13 @@ List<String> mainDishCategories = [
   "All",
   "Breakfast",
   "Iranian",
-  "Latin",
-  "Fast Food",
-  "Japanese",
 ];
 
 List<Meals> myMeals = [
   Meals(
     name: "Pancakes",
     difficulty: "Easy",
-    url: "assets/images/P.jpg",
+    url: "assets/images/meals/breakfast/P.jpg",
     ingredients: {
       egg: "2",
       salt: "1/4 Teaspoon",
@@ -31,7 +28,7 @@ List<Meals> myMeals = [
   Meals(
     name: "Bacon Pancakes",
     difficulty: "Easy",
-    url: "assets/images/BP.jpg",
+    url: "assets/images/meals/breakfast/BP.jpg",
     ingredients: {
       bacon: "8 Pieces",
       egg: "3",

@@ -5,20 +5,13 @@ List<String> snackCategories = [
   "All",
   "Cakes",
   "Cookies",
-  "Biscuits",
-  "Pastries",
-  "Custards",
-  "Puddings",
-  "Deep-fried",
-  "Frozen",
-  "Gelatin",
 ];
 
 List<Meals> mySnacks = [
   Meals(
     name: "Chocolate Chip Cookies",
     difficulty: "Easy",
-    url: "assets/images/CCC.jpg",
+    url: "assets/images/snacks/cake/CCC.jpg",
     ingredients: {
       flour: "2 1/4 Cups",
       backingSoda: "1 Teaspoon",
@@ -39,7 +32,7 @@ List<Meals> mySnacks = [
   Meals(
     name: "Lemon Layer Cake",
     difficulty: "Easy",
-    url: "assets/images/LLC.jpg",
+    url: "assets/images/snacks/cake/LLC.jpg",
     ingredients: {
       butter: "225g",
       sugar: "225g",
@@ -66,7 +59,7 @@ List<Meals> mySnacks = [
   Meals(
     name: "Carrot Cake",
     difficulty: "Easy",
-    url: "assets/images/CCF.jpg",
+    url: "assets/images/snacks/cake/CCF.jpg",
     ingredients: {
       oil: "230g",
       egg: "4",
@@ -92,7 +85,7 @@ List<Meals> mySnacks = [
   Meals(
     name: "Chocolate Cake",
     difficulty: "Easy",
-    url: "assets/images/CC.jpg",
+    url: "assets/images/snacks/cake/CC.jpg",
     ingredients: {
       oil: "150ml",
       flour: "175g",

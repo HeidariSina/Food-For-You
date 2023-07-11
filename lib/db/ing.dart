@@ -22,6 +22,7 @@ Ingredients chicken = Ingredients("Chicken", "assets/svg/chicken.svg");
 Ingredients chocolate = Ingredients("Chocolate", "assets/svg/chocolate.svg");
 Ingredients cinnamon = Ingredients("Cinnamon", "assets/svg/cinnamon.svg");
 Ingredients cocoa = Ingredients("Cocoa Powder", "assets/svg/cocoa.svg");
+Ingredients coffee = Ingredients("Espresso Coffee", "assets/svg/coffee.svg");
 Ingredients cookie = Ingredients("Cookie", "assets/svg/cookie.svg");
 Ingredients egg = Ingredients("Egg", "assets/svg/egg.svg");
 Ingredients fish = Ingredients("Fish", "assets/svg/fish.svg");

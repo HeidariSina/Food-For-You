@@ -20,13 +20,19 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/BAE.jpeg
-    - assets/images/BP.jpg
-    - assets/images/CCC.jpg
-    - assets/images/CC.jpg
-    - assets/images/LLC.jpg
-    - assets/images/CCF.jpg
-    - assets/images/P.jpg
+    - assets/images/meals/breakfast/BP.jpg
+    - assets/images/meals/breakfast/P.jpg
+
+    - assets/images/snacks/cake/CCC.jpg
+    - assets/images/snacks/cake/CC.jpg
+    - assets/images/snacks/cake/LLC.jpg
+    - assets/images/snacks/cake/CCF.jpg
+
+    - assets/images/drinks/coffee/cappucino.jpg
+    - assets/images/drinks/coffee/flat_white.jpg
+    - assets/images/drinks/coffee/latte.jpg
+    - assets/images/drinks/coffee/macchiato.jpg
+    - assets/images/drinks/coffee/mocha.jpg
 
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
@@ -46,6 +52,7 @@ flutter:
     - assets/svg/chocolate.svg
     - assets/svg/cinnamon.svg
     - assets/svg/cocoa.svg
+    - assets/svg/coffee.svg
     - assets/svg/cookie.svg
     - assets/svg/egg.svg
     - assets/svg/fish.svg
