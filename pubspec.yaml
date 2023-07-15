@@ -43,28 +43,37 @@ flutter:
     - assets/images/drinks/coffee/macchiato.jpg
     - assets/images/drinks/coffee/mocha.jpg
 
+    - assets/images/drinks/milkshake/bananaMilkshake.jpg
+    - assets/images/drinks/milkshake/blueberryMilkshake.jpg
+    - assets/images/drinks/milkshake/chocolateMilkshake.jpg
+    - assets/images/drinks/milkshake/strawberryMilkshake.jpg
+    - assets/images/drinks/milkshake/vanillaMilkshake.jpg
+
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
     - assets/svg/backing_soda.svg
     - assets/svg/bacon.svg
     - assets/svg/banana.svg
     - assets/svg/beans.svg
-
     - assets/svg/beef.svg
     - assets/svg/bell_pepper.svg
     - assets/svg/biscuit.svg
+    - assets/svg/blackberry.svg
+    - assets/svg/blueberry.svg
     - assets/svg/bread.svg
     - assets/svg/brown_sugar.svg
     - assets/svg/butter.svg
     - assets/svg/cabbage.svg
     - assets/svg/carrot.svg
     - assets/svg/cheese.svg
+    - assets/svg/cherry.svg
     - assets/svg/chicken.svg
     - assets/svg/chocolate.svg
     - assets/svg/cinnamon.svg
     - assets/svg/cocoa.svg
     - assets/svg/coffee.svg
     - assets/svg/cookie.svg
+    - assets/svg/cream.svg
     - assets/svg/cucumber.svg
     - assets/svg/egg.svg
     - assets/svg/fennel.svg
@@ -72,9 +81,11 @@ flutter:
     - assets/svg/flour.svg
     - assets/svg/garlic.svg
     - assets/svg/grape.svg
+    - assets/svg/hazelnut.svg
     - assets/svg/ice_cream.svg
     - assets/svg/lemon.svg
     - assets/svg/lettuce.svg
+    - assets/svg/marshmallow.svg
     - assets/svg/mayonnaise.svg
     - assets/svg/meat.svg
     - assets/svg/milk.svg
@@ -91,10 +102,12 @@ flutter:
     - assets/svg/pepper.svg
     - assets/svg/potato.svg
     - assets/svg/raisin.svg
+    - assets/svg/raspberry.svg
     - assets/svg/red_pepper.svg
     - assets/svg/rise.svg
     - assets/svg/salt.svg
     - assets/svg/sausage.svg
+    - assets/svg/strawberry.svg
     - assets/svg/sugar.svg
     - assets/svg/tomato.svg
     - assets/svg/tuna.svg
