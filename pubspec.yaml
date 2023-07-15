@@ -21,10 +21,19 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/meals/breakfast/BP.jpg
-    - assets/images/meals/breakfast/P.jpg
+    - assets/images/meals/breakfast/AirFryerBacon.jpg
+    - assets/images/meals/breakfast/Pancakes.jpg
+    - assets/images/meals/breakfast/PoachedEggs.jpg
 
-    - assets/images/snacks/cake/CCC.jpg
+    - assets/images/meals/salad/GreekSalad.jpg
+    - assets/images/meals/salad/PotatoSalad.jpg
+    - assets/images/meals/salad/GreenGoddessSalad.jpg
+    - assets/images/meals/salad/SaladeNicoise.jpg
+
+    - assets/images/snacks/cookie/CCC.jpg
+
     - assets/images/snacks/cake/CC.jpg
+    - assets/images/snacks/cake/ButterflyCupcakes.jpg
     - assets/images/snacks/cake/LLC.jpg
     - assets/images/snacks/cake/CCF.jpg
 
@@ -39,6 +48,8 @@ flutter:
     - assets/svg/backing_soda.svg
     - assets/svg/bacon.svg
     - assets/svg/banana.svg
+    - assets/svg/beans.svg
+
     - assets/svg/beef.svg
     - assets/svg/bell_pepper.svg
     - assets/svg/biscuit.svg
@@ -54,26 +65,41 @@ flutter:
     - assets/svg/cocoa.svg
     - assets/svg/coffee.svg
     - assets/svg/cookie.svg
+    - assets/svg/cucumber.svg
     - assets/svg/egg.svg
+    - assets/svg/fennel.svg
     - assets/svg/fish.svg
     - assets/svg/flour.svg
+    - assets/svg/garlic.svg
     - assets/svg/grape.svg
     - assets/svg/ice_cream.svg
     - assets/svg/lemon.svg
+    - assets/svg/lettuce.svg
+    - assets/svg/mayonnaise.svg
     - assets/svg/meat.svg
     - assets/svg/milk.svg
+    - assets/svg/mustard.svg
     - assets/svg/nutmeg.svg
     - assets/svg/nuts.svg
     - assets/svg/oil.svg
+    - assets/svg/olive.svg
+    - assets/svg/oliveOil.svg
+    - assets/svg/onion.svg
     - assets/svg/orange.svg
+    - assets/svg/oregano.svg
+    - assets/svg/parsley.svg
     - assets/svg/pepper.svg
+    - assets/svg/potato.svg
     - assets/svg/raisin.svg
     - assets/svg/red_pepper.svg
     - assets/svg/rise.svg
     - assets/svg/salt.svg
     - assets/svg/sausage.svg
     - assets/svg/sugar.svg
+    - assets/svg/tomato.svg
+    - assets/svg/tuna.svg
     - assets/svg/vanilla.svg
+    - assets/svg/vinegar.svg
     - assets/svg/water.svg
     - assets/svg/yogurt.svg
     - assets/svg/zaferan.svg

@@ -54,14 +54,15 @@ class _MyDrinkPage extends State<MyDrinkPage> {
 
   void _sumbitInputFromSearch() {
     setState(() {
-      _textInputControl.text = "";
       _selectedindex = 0;
       _selectedMeals = widget.meals
           .where((element) => element.name
               .toLowerCase()
               .contains(_textInputControl.text.toLowerCase()))
           .toList();
+      _textInputControl.text = "";
     });
+    widget.func(0);
   }
 
   @override

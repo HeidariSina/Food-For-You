@@ -117,9 +117,9 @@ class MyHomePage extends StatelessWidget {
                 // ],
                 itemBuilder: (contex, index) {
                   if (index == 0) {
-                    return (MyCard(mySnacks[0], true, index));
+                    return (MyCard(homePageMeals[index], true, index));
                   } else {
-                    return (MyCard(mySnacks[0], false, index));
+                    return (MyCard(homePageMeals[index], false, index));
                   }
                 },
                 itemCount: 4,

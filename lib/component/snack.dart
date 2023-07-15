@@ -9,6 +9,7 @@ class MySnacksPage extends StatefulWidget {
   final List<String> category;
   final int index;
   final Function func;
+
   const MySnacksPage(this.meals, this.category, this.index, this.func,
       {super.key});
 
@@ -54,14 +55,15 @@ class _MySnacksPage extends State<MySnacksPage> {
 
   void _sumbitInputFromSearch() {
     setState(() {
-      _textInputControl.text = "";
       _selectedindex = 0;
       _selectedMeals = widget.meals
           .where((element) => element.name
               .toLowerCase()
               .contains(_textInputControl.text.toLowerCase()))
           .toList();
+      _textInputControl.text = "";
     });
+    widget.func(0);
   }
 
   @override
