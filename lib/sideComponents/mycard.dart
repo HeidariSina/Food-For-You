@@ -32,16 +32,16 @@ class MyCard extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.6,
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(1),
-              spreadRadius: 5,
-              blurRadius: 7,
-              offset: const Offset(0, 10),
-            ),
-          ],
           borderRadius: const BorderRadius.all(Radius.circular(20)),
-          color: Theme.of(context).colorScheme.primary,
+          border: Border.all(color: Colors.lightGreenAccent, width: 2),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: <Color>[
+              Theme.of(context).colorScheme.primary,
+              Colors.teal.shade200
+            ],
+          ),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
