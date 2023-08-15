@@ -25,6 +25,19 @@ flutter:
     - assets/images/meals/breakfast/Pancakes.jpg
     - assets/images/meals/breakfast/PoachedEggs.jpg
 
+    - assets/images/meals/pasta/ChickenPastaBake.jpg
+    - assets/images/meals/pasta/CaponataPasta.jpg
+    - assets/images/meals/pasta/ChickenAndBaconPasta.jpg
+    - assets/images/meals/pasta/CreamyMushroomPasta.jpg
+    - assets/images/meals/pasta/EasyTomatoPasta.jpg
+    - assets/images/meals/pasta/CreamyCourgetteAndBaconPasta.jpg
+    - assets/images/meals/pasta/CheesyHamBroccoliPasta.jpg
+    - assets/images/meals/pasta/PastaAllaVodka.jpg
+    - assets/images/meals/pasta/SausagePasta.jpg
+    - assets/images/meals/pasta/BaconAndMushroomPasta.jpg
+    - assets/images/meals/pasta/ChunkySausageAndTomatoPasta.jpg
+    - assets/images/meals/pasta/HomemadePasta.jpg
+
     - assets/images/meals/salad/GreekSalad.jpg
     - assets/images/meals/salad/PotatoSalad.jpg
     - assets/images/meals/salad/GreenGoddessSalad.jpg
@@ -49,6 +62,7 @@ flutter:
     - assets/images/drinks/milkshake/strawberryMilkshake.jpg
     - assets/images/drinks/milkshake/vanillaMilkshake.jpg
 
+    - assets/svg/alcohol.svg
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
     - assets/svg/backing_soda.svg
@@ -61,6 +75,7 @@ flutter:
     - assets/svg/blackberry.svg
     - assets/svg/blueberry.svg
     - assets/svg/bread.svg
+    - assets/svg/broccoli.svg
     - assets/svg/brown_sugar.svg
     - assets/svg/butter.svg
     - assets/svg/cabbage.svg
@@ -73,6 +88,7 @@ flutter:
     - assets/svg/cocoa.svg
     - assets/svg/coffee.svg
     - assets/svg/cookie.svg
+    - assets/svg/courgette.svg
     - assets/svg/cream.svg
     - assets/svg/cucumber.svg
     - assets/svg/egg.svg
@@ -89,6 +105,7 @@ flutter:
     - assets/svg/mayonnaise.svg
     - assets/svg/meat.svg
     - assets/svg/milk.svg
+    - assets/svg/mushroom.svg
     - assets/svg/mustard.svg
     - assets/svg/nutmeg.svg
     - assets/svg/nuts.svg
@@ -99,6 +116,7 @@ flutter:
     - assets/svg/orange.svg
     - assets/svg/oregano.svg
     - assets/svg/parsley.svg
+    - assets/svg/pasta.svg
     - assets/svg/pepper.svg
     - assets/svg/potato.svg
     - assets/svg/raisin.svg
@@ -106,6 +124,7 @@ flutter:
     - assets/svg/red_pepper.svg
     - assets/svg/rise.svg
     - assets/svg/salt.svg
+    - assets/svg/sauce.svg
     - assets/svg/sausage.svg
     - assets/svg/strawberry.svg
     - assets/svg/sugar.svg
@@ -114,6 +133,7 @@ flutter:
     - assets/svg/vanilla.svg
     - assets/svg/vinegar.svg
     - assets/svg/water.svg
+    - assets/svg/wine.svg
     - assets/svg/yogurt.svg
     - assets/svg/zaferan.svg
 
