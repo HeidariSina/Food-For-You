@@ -50,6 +50,19 @@ flutter:
     - assets/images/snacks/cake/LLC.jpg
     - assets/images/snacks/cake/CCF.jpg
 
+    - assets/images/snacks/bread/BananaBread.jpg
+    - assets/images/snacks/bread/NaanBread.jpg
+    - assets/images/snacks/bread/PittaBread.jpg
+    - assets/images/snacks/bread/BreadRolls.jpg
+    - assets/images/snacks/bread/WhiteBread.jpg
+    - assets/images/snacks/bread/MonkeyBread.jpg
+    - assets/images/snacks/bread/CheesyGarlicBread.jpg
+    - assets/images/snacks/bread/EggyBread.jpg
+    - assets/images/snacks/bread/TigerBread.jpg
+    - assets/images/snacks/bread/OliveOilBread.jpg
+    - assets/images/snacks/bread/MincemeatBananaBread.jpg
+    - assets/images/snacks/bread/IrishSodaBread.jpg
+
     - assets/images/drinks/coffee/cappucino.jpg
     - assets/images/drinks/coffee/flat_white.jpg
     - assets/images/drinks/coffee/latte.jpg
@@ -98,6 +111,7 @@ flutter:
     - assets/svg/garlic.svg
     - assets/svg/grape.svg
     - assets/svg/hazelnut.svg
+    - assets/svg/honey.svg
     - assets/svg/ice_cream.svg
     - assets/svg/lemon.svg
     - assets/svg/lettuce.svg
