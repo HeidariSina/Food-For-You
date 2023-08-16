@@ -1,7 +1,6 @@
 # Food For You
 
 This is a App Developed By Sina Heidari with help of Bahare Beheshti, Mohhomad Barabadi and Sara Heidari.
-
 In this app you have found recepies about Main dishes, Snacks and even Drinks.
 
 ## Main Dish
@@ -19,5 +18,5 @@ Main categories are : Cake and Bread
 
 ## For Download
 
-Android : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/android)
+Android : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/android)\_\_
 IOS : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/IOS)
