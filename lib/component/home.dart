@@ -67,7 +67,6 @@ class MyHomePage extends StatelessWidget {
       ).toList();
     }
     homePageMeals.shuffle();
-
     return SafeArea(
         child: SingleChildScrollView(
       child: Container(

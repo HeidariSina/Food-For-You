@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.13.1
   flutter_svg: ^2.0.5
   font_awesome_flutter: ^10.4.0
 
@@ -16,6 +17,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+
+flutter_launcher_icons:
+  image_path: "assets/images/icon/icon.png"
+  android: true
+  ios: true
+  min_sdk_android: 21
+  remove_alpha_ios: true
 
 flutter:
   uses-material-design: true
@@ -37,6 +45,25 @@ flutter:
     - assets/images/meals/pasta/BaconAndMushroomPasta.jpg
     - assets/images/meals/pasta/ChunkySausageAndTomatoPasta.jpg
     - assets/images/meals/pasta/HomemadePasta.jpg
+
+    - assets/images/meals/persian/Abgoosht.jpg
+    - assets/images/meals/persian/AdasPolo.jpg
+    - assets/images/meals/persian/Adassi.jpg
+    - assets/images/meals/persian/AsheJow.jpg
+    - assets/images/meals/persian/AsheReshteh.jpg
+    - assets/images/meals/persian/BaghaliPolo.jpg
+    - assets/images/meals/persian/GheymehBademjan.jpg
+    - assets/images/meals/persian/KashkeBademjan.jpg
+    - assets/images/meals/persian/KhoreshGheymeh.jpg
+    - assets/images/meals/persian/Kotlet.jpg
+    - assets/images/meals/persian/KoukouSabzi.jpg
+    - assets/images/meals/persian/KoukouSibzamini.jpg
+    - assets/images/meals/persian/MirzaGhasemi.jpg
+    - assets/images/meals/persian/SaladeOlivieh.jpg
+    - assets/images/meals/persian/SholehZard.jpg
+    - assets/images/meals/persian/Tahdig.jpg
+    - assets/images/meals/persian/GhormehSabzi.jpg
+    - assets/images/meals/persian/JoojehKabab.jpg
 
     - assets/images/meals/salad/GreekSalad.jpg
     - assets/images/meals/salad/PotatoSalad.jpg
