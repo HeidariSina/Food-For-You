@@ -4,20 +4,20 @@ This is a App Developed By Sina Heidari with help of Bahare Beheshti, Mohhomad B
 
 In this app you have found recepies about Main dishes, Snacks and even Drinks.
 
-# Main Dish
+## Main Dish
 
 In the Main Dish there are more than 50 recepies.
 Main categories are : Persian , Pasta , Breakfast and Salad
 
-# Drinks
+## Drinks
 
 Main categories are : Coffie and Milkshake
 
-# Snacks
+## Snacks
 
 Main categories are : Cake and Bread
 
-# For Download
+## For Download
 
 Android : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/android)
 IOS : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/IOS)
