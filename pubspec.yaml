@@ -46,24 +46,26 @@ flutter:
     - assets/images/meals/pasta/ChunkySausageAndTomatoPasta.jpg
     - assets/images/meals/pasta/HomemadePasta.jpg
 
-    - assets/images/meals/persian/Abgoosht.jpg
-    - assets/images/meals/persian/AdasPolo.jpg
-    - assets/images/meals/persian/Adassi.jpg
-    - assets/images/meals/persian/AsheJow.jpg
-    - assets/images/meals/persian/AsheReshteh.jpg
-    - assets/images/meals/persian/BaghaliPolo.jpg
-    - assets/images/meals/persian/GheymehBademjan.jpg
-    - assets/images/meals/persian/KashkeBademjan.jpg
-    - assets/images/meals/persian/KhoreshGheymeh.jpg
-    - assets/images/meals/persian/Kotlet.jpg
-    - assets/images/meals/persian/KoukouSabzi.jpg
-    - assets/images/meals/persian/KoukouSibzamini.jpg
-    - assets/images/meals/persian/MirzaGhasemi.jpg
-    - assets/images/meals/persian/SaladeOlivieh.jpg
-    - assets/images/meals/persian/SholehZard.jpg
-    - assets/images/meals/persian/Tahdig.jpg
     - assets/images/meals/persian/GhormehSabzi.jpg
     - assets/images/meals/persian/JoojehKabab.jpg
+    - assets/images/meals/persian/Koobideh.jpg
+    - assets/images/meals/persian/Tahdig.jpg
+    - assets/images/meals/persian/KhoreshGheymeh.jpg
+    - assets/images/meals/persian/SholehZard.jpg
+    - assets/images/meals/persian/KoukouSabzi.jpg
+    - assets/images/meals/persian/KoukouSibzamini.jpg
+    - assets/images/meals/persian/AsheJow.jpg
+    - assets/images/meals/persian/AsheReshteh.jpg
+    - assets/images/meals/persian/AdasPolo.jpg
+    - assets/images/meals/persian/BaghaliPolo.jpg
+    - assets/images/meals/persian/SaladeOlivieh.jpg
+    - assets/images/meals/persian/Kotlet.jpg
+    - assets/images/meals/persian/MirzaGhasemi.jpg
+    - assets/images/meals/persian/Adassi.jpg
+    - assets/images/meals/persian/Abgoosht.jpg
+    - assets/images/meals/persian/GheymehBademjan.jpg
+    - assets/images/meals/persian/KashkeBademjan.jpg
+    - assets/images/meals/persian/ZereshkPoloBaMorgh.jpg
 
     - assets/images/meals/salad/GreekSalad.jpg
     - assets/images/meals/salad/PotatoSalad.jpg
@@ -132,6 +134,7 @@ flutter:
     - assets/svg/cream.svg
     - assets/svg/cucumber.svg
     - assets/svg/egg.svg
+    - assets/svg/eggplant.svg
     - assets/svg/fennel.svg
     - assets/svg/fish.svg
     - assets/svg/flour.svg
@@ -163,7 +166,7 @@ flutter:
     - assets/svg/raisin.svg
     - assets/svg/raspberry.svg
     - assets/svg/red_pepper.svg
-    - assets/svg/rise.svg
+    - assets/svg/rice.svg
     - assets/svg/salt.svg
     - assets/svg/sauce.svg
     - assets/svg/sausage.svg
