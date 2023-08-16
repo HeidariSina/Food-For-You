@@ -19,5 +19,5 @@ Main categories are : Cake and Bread
 
 # For Download
 
-Android : click the Link
-IOS : click the Link
+Android : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/android)
+IOS : [click the Link](https://github.com/HeidariSina/Meals/tree/main/download/IOS)
