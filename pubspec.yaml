@@ -32,6 +32,15 @@ flutter:
     - assets/images/meals/breakfast/AirFryerBacon.jpg
     - assets/images/meals/breakfast/Pancakes.jpg
     - assets/images/meals/breakfast/PoachedEggs.jpg
+    - assets/images/meals/breakfast/OvernightOats.jpg
+    - assets/images/meals/breakfast/TurboBeansAndCheese.jpg
+    - assets/images/meals/breakfast/EggyCheeseCrumpets.jpg
+    - assets/images/meals/breakfast/SoftBoiledEggs.jpg
+    - assets/images/meals/breakfast/EggWraps.jpg
+    - assets/images/meals/breakfast/BreakfastBurrito.jpg
+    - assets/images/meals/breakfast/HighProteinBreakfast.jpg
+    - assets/images/meals/breakfast/TofuScramble.jpg
+    - assets/images/meals/breakfast/SalsaVerdeBakedEggs.jpg
 
     - assets/images/meals/pasta/ChickenPastaBake.jpg
     - assets/images/meals/pasta/CaponataPasta.jpg
