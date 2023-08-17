@@ -1,5 +1,12 @@
 import './ingredients.dart';
 
+List<String> modes = [
+  "All",
+  "Easy",
+  "Medium",
+  "Hard",
+];
+
 class Meals {
   String name;
   String difficulty;

@@ -105,15 +105,12 @@ class MyHomePage extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.68,
+              height: MediaQuery.of(context).size.height * 0.68 > 550
+                  ? MediaQuery.of(context).size.height * 0.72
+                  : MediaQuery.of(context).size.height * 0.68,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                // children: [
-                //   MyCard(mySnacks[0], true, 0),
-                //   MyCard(mySnacks[0], false, 1),
-                //   MyCard(mySnacks[0], false, 2)
-                // ],
                 itemBuilder: (contex, index) {
                   if (index == 0) {
                     return (MyCard(homePageMeals[index], true, index));

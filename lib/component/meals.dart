@@ -9,16 +9,16 @@ class MyMealsPage extends StatefulWidget {
   final List<String> category;
   final int index;
   final Function func;
-
   const MyMealsPage(this.meals, this.category, this.index, this.func,
       {super.key});
 
   @override
-  State<MyMealsPage> createState() => _MyMealsPageState();
+  State<MyMealsPage> createState() => _MyMealsPage();
 }
 
-class _MyMealsPageState extends State<MyMealsPage> {
+class _MyMealsPage extends State<MyMealsPage> {
   int _selectedindex = 0;
+  int _selectedMode = 0;
   List<Meals> _selectedMeals = [];
   TextEditingController _textInputControl = TextEditingController();
 
@@ -40,11 +40,22 @@ class _MyMealsPageState extends State<MyMealsPage> {
   void changeSelectedIndex(int index) {
     setState(() {
       if (index == 0) {
-        _selectedMeals = widget.meals;
+        if (_selectedMode == 0) {
+          _selectedMeals = widget.meals;
+        } else {
+          _selectedMeals = widget.meals
+              .where((element) => element.difficulty == modes[_selectedMode])
+              .toList();
+        }
       } else {
         _selectedMeals = widget.meals.where(
           (element) {
-            return element.category == widget.category[index];
+            if (_selectedMode == 0) {
+              return element.category == widget.category[index];
+            } else {
+              return element.category == widget.category[index] &&
+                  element.difficulty == modes[_selectedMode];
+            }
           },
         ).toList();
       }
@@ -53,9 +64,37 @@ class _MyMealsPageState extends State<MyMealsPage> {
     widget.func(index);
   }
 
+  void changeMode(int index) {
+    setState(() {
+      if (index == 0) {
+        if (_selectedindex == 0) {
+          _selectedMeals = widget.meals;
+        } else {
+          _selectedMeals = widget.meals
+              .where((element) =>
+                  element.category == widget.category[_selectedindex])
+              .toList();
+        }
+      } else {
+        _selectedMeals = widget.meals.where(
+          (element) {
+            if (_selectedindex == 0) {
+              return element.difficulty == modes[index];
+            } else {
+              return element.difficulty == modes[index] &&
+                  element.category == widget.category[_selectedindex];
+            }
+          },
+        ).toList();
+      }
+      _selectedMode = index;
+    });
+  }
+
   void _sumbitInputFromSearch() {
     setState(() {
       _selectedindex = 0;
+      _selectedMode = 0;
       _selectedMeals = widget.meals
           .where((element) => element.name
               .toLowerCase()
@@ -76,7 +115,7 @@ class _MyMealsPageState extends State<MyMealsPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Main Dish",
+              Text("Drinks",
                   style: TextStyle(
                       fontSize: 30,
                       color: Theme.of(context).colorScheme.surface)),
@@ -111,7 +150,7 @@ class _MyMealsPageState extends State<MyMealsPage> {
                       fontSize: 17,
                       color: Theme.of(context).colorScheme.primary)),
               Container(
-                margin: const EdgeInsets.symmetric(vertical: 10),
+                margin: const EdgeInsets.symmetric(vertical: 8),
                 height: 35,
                 width: MediaQuery.of(context).size.width - 20,
                 child: ListView.builder(
@@ -128,13 +167,35 @@ class _MyMealsPageState extends State<MyMealsPage> {
                   itemCount: widget.category.length,
                 ),
               ),
-              Text("Meals :",
+              Text("Difficulty :",
+                  style: TextStyle(
+                      fontSize: 17,
+                      color: Theme.of(context).colorScheme.primary)),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 8),
+                height: 35,
+                width: MediaQuery.of(context).size.width - 20,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (contex, index) {
+                    if (_selectedMode == index) {
+                      return MyCategoryCard(
+                          modes[index], true, index, changeMode);
+                    } else {
+                      return MyCategoryCard(
+                          modes[index], false, index, changeMode);
+                    }
+                  },
+                  itemCount: modes.length,
+                ),
+              ),
+              Text("Drinks :",
                   style: TextStyle(
                       fontSize: 17,
                       color: Theme.of(context).colorScheme.primary)),
               _selectedMeals.isEmpty
                   ? SizedBox(
-                      height: 400,
+                      height: 250,
                       child: Center(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -156,7 +217,9 @@ class _MyMealsPageState extends State<MyMealsPage> {
                     )
                   : Container(
                       margin: const EdgeInsets.only(top: 20),
-                      height: MediaQuery.of(context).size.height * 0.68,
+                      height: MediaQuery.of(context).size.height * 0.68 > 550
+                          ? MediaQuery.of(context).size.height * 0.79
+                          : MediaQuery.of(context).size.height * 0.76,
                       width: MediaQuery.of(context).size.width,
                       child: GridView.count(
                         mainAxisSpacing: 0,
