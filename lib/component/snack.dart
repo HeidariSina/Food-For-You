@@ -20,7 +20,7 @@ class _MySnacksPage extends State<MySnacksPage> {
   int _selectedindex = 0;
   int _selectedMode = 0;
   List<Meals> _selectedMeals = [];
-  TextEditingController _textInputControl = TextEditingController();
+  final TextEditingController _textInputControl = TextEditingController();
 
   @override
   void initState() {

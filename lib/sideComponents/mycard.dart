@@ -48,7 +48,7 @@ class MyCard extends StatelessWidget {
           children: [
             Text(
               meal.name,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
             Text(meal.category),
             Row(
