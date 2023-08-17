@@ -1,7 +1,7 @@
 name: meals
 description: A new Flutter project.
 publish_to: "none"
-version: 0.9.0
+version: 0.10.0
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
