@@ -1,7 +1,7 @@
 name: meals
 description: A new Flutter project.
 publish_to: "none"
-version: 0.1.0
+version: 0.9.0
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
@@ -81,7 +81,18 @@ flutter:
     - assets/images/meals/salad/GreenGoddessSalad.jpg
     - assets/images/meals/salad/SaladeNicoise.jpg
 
-    - assets/images/snacks/cookie/CCC.jpg
+    - assets/images/snacks/chocolate/CCC.jpg
+    - assets/images/snacks/chocolate/ChocolateTiffin.jpg
+    - assets/images/snacks/chocolate/ChocolateOrangeTart.jpg
+    - assets/images/snacks/chocolate/ChocolateCheesecake.jpg
+    - assets/images/snacks/chocolate/ChocolateMoltenCakes.jpg
+    - assets/images/snacks/chocolate/ChocolateCoconutBanoffee.jpg
+    - assets/images/snacks/chocolate/ChocolateMacarons.jpg
+    - assets/images/snacks/chocolate/ChocolateMarquise.jpg
+    - assets/images/snacks/chocolate/ChocolateSorbet.jpg
+    - assets/images/snacks/chocolate/DoubleChocolateCardamomPots.jpg
+    - assets/images/snacks/chocolate/ChocolateAndPomegranateTorte.jpg
+    - assets/images/snacks/chocolate/ChocolateBiscuits.jpg
 
     - assets/images/snacks/cake/CC.jpg
     - assets/images/snacks/cake/ButterflyCupcakes.jpg
@@ -147,6 +158,7 @@ flutter:
     - assets/svg/fennel.svg
     - assets/svg/fish.svg
     - assets/svg/flour.svg
+    - assets/svg/fruits.svg
     - assets/svg/garlic.svg
     - assets/svg/grape.svg
     - assets/svg/hazelnut.svg
@@ -189,6 +201,7 @@ flutter:
     - assets/svg/wine.svg
     - assets/svg/yogurt.svg
     - assets/svg/zaferan.svg
+    - assets/svg/spice.svg
 
     - assets/svg/info.svg
 
