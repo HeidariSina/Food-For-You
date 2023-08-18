@@ -46,6 +46,7 @@ Ingredients grape = Ingredients("Grape", "assets/svg/grape.svg");
 Ingredients hazelnut = Ingredients("Hazelnut", "assets/svg/hazelnut.svg");
 Ingredients herb = Ingredients("Herb", "assets/svg/parsley.svg");
 Ingredients honey = Ingredients("Honey", "assets/svg/honey.svg");
+Ingredients ice = Ingredients("Ice", "assets/svg/ice.svg");
 Ingredients iceCream = Ingredients("Ice Cream", "assets/svg/ice_cream.svg");
 Ingredients lemon = Ingredients("Lemon", "assets/svg/lemon.svg");
 Ingredients lettuce = Ingredients("Lettuce", "assets/svg/lettuce.svg");

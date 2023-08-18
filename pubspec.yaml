@@ -124,6 +124,21 @@ flutter:
     - assets/images/drinks/milkshake/strawberryMilkshake.jpg
     - assets/images/drinks/milkshake/vanillaMilkshake.jpg
 
+    - assets/images/drinks/smoothie/BlueberryAndBananaSmoothie.jpg
+    - assets/images/drinks/smoothie/PeanutButterSmoothie.jpg
+    - assets/images/drinks/smoothie/StrawberrySmoothie.jpg
+    - assets/images/drinks/smoothie/KaleSmoothie.jpg
+    - assets/images/drinks/smoothie/BreakfastSmoothie.jpg
+    - assets/images/drinks/smoothie/SpinachSmoothie.jpg
+    - assets/images/drinks/smoothie/WatermelonSmoothie.jpg
+    - assets/images/drinks/smoothie/PineappleSmoothie.jpg
+    - assets/images/drinks/smoothie/KiwiSmoothie.jpg
+    - assets/images/drinks/smoothie/CherrySmoothie.jpg
+    - assets/images/drinks/smoothie/GreenSmoothie.jpg
+    - assets/images/drinks/smoothie/BlueberrySmoothie.jpg
+    - assets/images/drinks/smoothie/KetoSmoothie.jpg
+    - assets/images/drinks/smoothie/SuperBerrySmoothie.jpg
+
     - assets/svg/alcohol.svg
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
@@ -164,6 +179,7 @@ flutter:
     - assets/svg/hazelnut.svg
     - assets/svg/honey.svg
     - assets/svg/ice_cream.svg
+    - assets/svg/ice.svg
     - assets/svg/lemon.svg
     - assets/svg/lettuce.svg
     - assets/svg/marshmallow.svg

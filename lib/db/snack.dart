@@ -340,7 +340,7 @@ List<Meals> mySnacks = [
     url: "assets/images/snacks/bread/IrishSodaBread.jpg",
     ingredients: {
       flour: "250g White + 250g Wholemeal",
-      nuts: "100g Porridge oats",
+      bean: "100g Porridge oats",
       salt: "1 Teaspoon",
       butter: "25g",
       milk: "500ml",

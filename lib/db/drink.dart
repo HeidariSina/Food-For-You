@@ -1,7 +1,7 @@
 import '../class/meals.dart';
 import './ing.dart';
 
-List<String> drinkCategories = ["All", "Coffee", "Milkshake"];
+List<String> drinkCategories = ["All", "Coffee", "Milkshake", "Smoothie"];
 
 List<Meals> myDrinks = [
   Meals(
@@ -148,6 +148,249 @@ List<Meals> myDrinks = [
     category: "Milkshake",
     description:
         "Step 1 :\nIn a blender, whizz blueberries, maple syrup or honey, vanilla extract, milk and ice cream. Pour into milkshake glasses and enjoy with a straw.",
+    time: "10m",
+  ),
+  Meals(
+    name: "",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/.jpg",
+    ingredients: {},
+    category: "Smoothie",
+    description: "",
+    time: "",
+  ),
+  Meals(
+    name: "Blueberry & Banana Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/BlueberryAndBananaSmoothie.jpg",
+    ingredients: {
+      banana: "2",
+      blueberry: "125g",
+      milk: "300g Silken Tofu",
+      bean: "2 Tablespoon Oats",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nWhizz all of the ingredients together in a blender with 300ml water. Drink straight away or transfer to a bottle for later, shaking well before drinking.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Peanut Butter Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/PeanutButterSmoothie.jpg",
+    ingredients: {
+      milk: "200ml Oat Milk",
+      banana: "1",
+      butter: "20g Peanut Butter",
+      bean: "1 Tablespoon Oats",
+      cinnamon: "Pinch of",
+      powder: "Pinch of Allspice",
+      nutmeg: "Pinch of",
+      ice: "Small Handful",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nWhizz all the ingredients together in a blender (one suitable for crushing ice) until smooth. Pour into a tall glass and serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Strawberry Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/StrawberrySmoothie.jpg",
+    ingredients: {
+      strawberry: "175g",
+      banana: "1",
+      orange: "100ml Orange Juice",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nBlitz the strawberries in a blender with the banana and orange juice until smooth. and Pour the smoothie into a tall glass to serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Kale Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/KaleSmoothie.jpg",
+    ingredients: {
+      herb: "2 handfuls Kale",
+      fruits: "0.5 Avocado",
+      lemon: "0.5 Lime",
+      fruitsD1: "Large Pineapple chunks",
+      banana: "1",
+      nuts: "1 Tablespoom Cashew Nuts",
+      powder: "a chunk Ginger",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nPut all of the ingredients into a bullet or smoothie maker, add a large splash of water and blitz. Add more water until you have the desired consistency.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Breakfast Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/BreakfastSmoothie.jpg",
+    ingredients: {
+      banana: "1",
+      blackberry: "50g",
+      blueberry: "50g",
+      raspberry: "50g",
+      strawberry: "50g",
+      apple: "Apple Juice",
+      honey: "To Serve"
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nSlice the banana into your blender or food processor and add the berries of your choice. Whizz until smooth. With the blades whirring, pour in juice or water to make the consistency you like. Toss a few extra fruits on top, drizzle with honey and serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Spinach Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/.jpg",
+    ingredients: {
+      herb: "2 Chunks of Spinach",
+      fruits: "0.5 Avocado",
+      fruitsD1: "1 Mango",
+      banana: "1",
+      milk: "500ml",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nWhizz the frozen spinach with the avocado, chopped mango, banana and milk (we used unsweetened oat milk) in a powerful blender until smooth. Freeze the leftovers in lolly moulds for desserts, if you like.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Watermelon Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/.jpg",
+    ingredients: {
+      fruits: "150g Watermelon",
+      banana: "1",
+      apple: "100ml Apple Juice",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nBlitz the watermelon in a blender with the banana and apple juice until smooth and Pour the smoothie into a tall glass and serve immediately.",
+    time: "10m",
+  ),
+  Meals(
+    name: "Pineapple Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/PineappleSmoothie.jpg",
+    ingredients: {
+      fruits: "150g Pineapple",
+      banana: "1",
+      lemon: "1 Lime",
+      ice: "Optional",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nBlitz the pineapple in a blender with the banana, lime juice and 50ml cold water until smooth.\n\nStep 2 :\nFill a tall glass with ice, if you like, pour over the smoothie and serve immediately.",
+    time: "10m",
+  ),
+  Meals(
+    name: "Kiwi Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/KiwiSmoothie.jpg",
+    ingredients: {
+      fruits: "3 Kiwi",
+      fruitsD1: "1 Mango",
+      fruitsD2: "500ml Pineapple Juice",
+      banana: "1",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nPut all of the ingredients in a blender and blitz until smooth then pour into 2 tall glasses.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Cherry Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/CherrySmoothie.jpg",
+    ingredients: {
+      cherry: "300g",
+      yogurt: "150g Natural",
+      banana: "1",
+      vanilla: "0.5 Teaspoon"
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nTip all the ingredients into a blender and blitz until smooth. Adjust the thickness to your liking with 50-100ml cold water. Serve in four glasses or chill for up to 24 hrs, giving a good stir before serving.",
+    time: "10m",
+  ),
+  Meals(
+    name: "Green Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/GreenSmoothie.jpg",
+    ingredients: {
+      milk: "250ml",
+      powder: "1 Tablespoon Linseed",
+      powderD1: "1 Teaspoon Maca",
+      cinnamon: "Pinch of",
+      fruits: "1 Dates",
+      banana: "1",
+      herb: "Cavolo Nero or Spinach",
+      butter: "1 Tablespoon Almond Butter",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nPour the milk into a high-speed blender then add the ground flaxseed, maca powder (if using) and the cinnamon. Add the remaining ingredients then blitz until smooth. Pour into glasses and serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Blueberry Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/BlueberrySmoothie.jpg",
+    ingredients: {
+      blueberry: "175g",
+      banana: "1",
+      yogurt: "1 Tablespoon Natural",
+      apple: "100ml Juice",
+      herb: "3-4 Mint Leaves",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nPut the blueberries, banana, yogurt, apple juice and mint, if using, in a blender and blitz until smooth. Add a splash of water if it seems too thick.\n\nStep 2 :\nPour the smoothie into a tall glass with a glass straw to serve. Garnish with a sprig of mint, if you like.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Keto Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/KetoSmoothie.jpg",
+    ingredients: {
+      milk: "500ml Coconut milk",
+      herb: "130g Spinach",
+      raspberry: "50g",
+      strawberry: "50g",
+      blackberry: "50g",
+      bean: "40g Shelled Hemp Seeds",
+      beanD1: "20g Milled Flaxseed",
+      beanD2: "10g Ginger",
+      powder: "10g Tahini",
+      cinnamon: "1 Teaspoon",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nCombine all the ingredients in a powerful blender and blend until smooth. Serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Super Berry Smoothie",
+    difficulty: "Easy",
+    url: "assets/images/drinks/smoothie/SuperBerrySmoothie.jpg",
+    ingredients: {
+      raspberry: "120g",
+      strawberry: "120g",
+      blueberry: "120g",
+      blackberry: "120g",
+      yogurt: "450g Strawberry Yogurt",
+      milk: "100ml",
+      bean: "25g Oats",
+      honey: "2 Teaspoon",
+    },
+    category: "Smoothie",
+    description:
+        "Step 1 :\nWhizz the berries, yogurt and milk together with a stick blender until smooth. Stir through the porridge oats, then pour into 4 glasses and serve with a drizzle of honey, if you like.",
     time: "10m",
   ),
 ];

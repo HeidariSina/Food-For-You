@@ -11,7 +11,7 @@ Main categories are : Persian , Pasta , Breakfast and Salad
 
 ## Drinks
 
-Main categories are : Coffie and Milkshake
+Main categories are : Coffie, Milkshake And Smoothie
 
 ## Snacks
 
