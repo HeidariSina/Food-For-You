@@ -20,7 +20,7 @@ Main categories are : Cake and Bread
 ## For Download
 
 Android :<br/>
-<a href="https://github.com/HeidariSina/Food-For-You/blob/main/download/android/app-arm64-v8a-release.apk" download>ARM64</a> <spam>&nbsp;&nbsp;&nbsp;&nbsp;</spam>
+<a href="https://github.com/HeidariSina/Food-For-You/blob/main/download/android/app-arm64-v8a-release.apk" download>ARM64</a> <spam>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</spam>
 <a href="https://github.com/HeidariSina/Food-For-You/blob/main/download/android/app-armeabi-v7a-release.apk" download>Armeabi</a><spam>&nbsp;&nbsp;&nbsp;&nbsp;</spam>
 <a href="https://github.com/HeidariSina/Food-For-You/blob/main/download/android/app-x86_64-release.apk" download>X84-64</a>
 
