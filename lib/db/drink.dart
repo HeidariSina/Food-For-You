@@ -151,15 +151,6 @@ List<Meals> myDrinks = [
     time: "10m",
   ),
   Meals(
-    name: "",
-    difficulty: "Easy",
-    url: "assets/images/drinks/smoothie/.jpg",
-    ingredients: {},
-    category: "Smoothie",
-    description: "",
-    time: "",
-  ),
-  Meals(
     name: "Blueberry & Banana Smoothie",
     difficulty: "Easy",
     url: "assets/images/drinks/smoothie/BlueberryAndBananaSmoothie.jpg",
@@ -246,7 +237,7 @@ List<Meals> myDrinks = [
   Meals(
     name: "Spinach Smoothie",
     difficulty: "Easy",
-    url: "assets/images/drinks/smoothie/.jpg",
+    url: "assets/images/drinks/smoothie/SpinachSmoothie.jpg",
     ingredients: {
       herb: "2 Chunks of Spinach",
       fruits: "0.5 Avocado",
@@ -262,7 +253,7 @@ List<Meals> myDrinks = [
   Meals(
     name: "Watermelon Smoothie",
     difficulty: "Easy",
-    url: "assets/images/drinks/smoothie/.jpg",
+    url: "assets/images/drinks/smoothie/WatermelonSmoothie.jpg",
     ingredients: {
       fruits: "150g Watermelon",
       banana: "1",
