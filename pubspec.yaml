@@ -1,7 +1,7 @@
 name: meals
 description: A Recipe App Develped By Sina Heidari And Bahare Beheshti.
 publish_to: "none"
-version: 0.10.1
+version: 0.10.2
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
@@ -139,6 +139,19 @@ flutter:
     - assets/images/drinks/smoothie/KetoSmoothie.jpg
     - assets/images/drinks/smoothie/SuperBerrySmoothie.jpg
 
+    - assets/images/drinks/cocktail/ZombieCocktail.jpg
+    - assets/images/drinks/cocktail/SexOnTheBeachCocktail.jpg
+    - assets/images/drinks/cocktail/HurricaneCocktail.jpg
+    - assets/images/drinks/cocktail/ChampagneCocktail.jpg
+    - assets/images/drinks/cocktail/JessicaRabbitCocktail.jpg
+    - assets/images/drinks/cocktail/WhiteRabbitCocktail.jpg
+    - assets/images/drinks/cocktail/Valentine.jpg
+    - assets/images/drinks/cocktail/CherryBakewellCocktail.jpg
+    - assets/images/drinks/cocktail/MulledWineCocktail.jpg
+    - assets/images/drinks/cocktail/GrasshopperCocktail.jpg
+    - assets/images/drinks/cocktail/PrawnCocktail.jpg
+    - assets/images/drinks/cocktail/BronxCocktail.jpg
+
     - assets/svg/alcohol.svg
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
@@ -207,6 +220,7 @@ flutter:
     - assets/svg/salt.svg
     - assets/svg/sauce.svg
     - assets/svg/sausage.svg
+    - assets/svg/shrimp.svg
     - assets/svg/strawberry.svg
     - assets/svg/sugar.svg
     - assets/svg/tomato.svg

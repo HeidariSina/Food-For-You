@@ -195,7 +195,7 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                       color: Theme.of(context).colorScheme.primary)),
               _selectedMeals.isEmpty
                   ? SizedBox(
-                      height: 250,
+                      height: MediaQuery.of(context).size.height * 0.4,
                       child: Center(
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,

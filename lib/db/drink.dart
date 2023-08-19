@@ -1,7 +1,13 @@
 import '../class/meals.dart';
 import './ing.dart';
 
-List<String> drinkCategories = ["All", "Coffee", "Milkshake", "Smoothie"];
+List<String> drinkCategories = [
+  "All",
+  "Coffee",
+  "Milkshake",
+  "Smoothie",
+  "Cocktail",
+];
 
 List<Meals> myDrinks = [
   Meals(
@@ -383,5 +389,227 @@ List<Meals> myDrinks = [
     description:
         "Step 1 :\nWhizz the berries, yogurt and milk together with a stick blender until smooth. Stir through the porridge oats, then pour into 4 glasses and serve with a drizzle of honey, if you like.",
     time: "10m",
+  ),
+  Meals(
+    name: "Zombie Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/ZombieCocktail.jpg",
+    ingredients: {
+      alcohol: "25ml Dark Rum",
+      alcoholD1: "25ml White Rum",
+      lemon: "50ml Lime juice",
+      fruits: "150ml Pineapple juice",
+      ice: "For Colding",
+      syrup: "1 Teaspoon Grenadine",
+      info: "For the Garnish",
+      orange: "Wedge of",
+      cherry: "Maraschino Cherries",
+      herb: "Mint sprig",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPour the rums and fruit juices into a cocktail shaker filled with ice and shake hard until the outside of the shaker feels really cold.\n\nStep 2 :\nStrain the mixture into a tall glass or hurricane glass filled with ice, then slowly pour in the grenadine to colour the drink.\n\nStep 3 :\nSkewer the orange wedge and cherries on a cocktail stick. Garnish the drink with mint sprigs and the skewered fruit.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Sex On The Beach Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/SexOnTheBeachCocktail.jpg",
+    ingredients: {
+      alcohol: "50ml Vodka",
+      alcoholD1: "25ml Peach Schnapps",
+      orange: "4",
+      fruits: "50ml Cranberry juice",
+      cherry: "Glacé Cherries, to garnish",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nFill two tall glasses with ice cubes. Pour the vodka, peach schnapps and fruit juices into a large jug and stir.\n\nStep 2 :\nDivide the mixture between the two glasses and stir gently to combine. Garnish with the cocktail cherries and orange slices.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Hurricane Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/HurricaneCocktail.jpg",
+    ingredients: {
+      alcohol: "25ml Dark Rum",
+      alcoholD1: "25ml White Rum",
+      fruits: "1 Passion Fruit",
+      orange: "1",
+      lemon: "1",
+      syrup: "50ml Sugar Syrup",
+      syrupD1: "2 Teaspoon",
+      info: "To Garnish",
+      cherry: "4 Cocktail Cherries",
+      orangeD1: "2 Orange Slices",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nFill a cocktail shaker with ice then add the rums. Scoop the flesh and seeds from the passion fruit and add to the shaker along with the orange and lemon juices, sugar syrup and grenadine.\n\nStep 2:\nShake well until the outside of the cocktail shaker feels icy cold. Fill two hurricane glasses with fresh ice then double strain the drink into the prepared glasses.\n\nStep 3 :\nGarnish each one with an orange slice skewered onto a cocktail stick and a couple of cocktail cherries.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Champagne Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/ChampagneCocktail.jpg",
+    ingredients: {
+      sugar: "1 Sugar Cube",
+      alcohol: "0.25 Teaspoon Angostura Bitters",
+      alcoholD1: "10ml Cognac",
+      alcoholD2: "75ml Cold Champagne",
+      orange: "Strip of Orange Peel",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPut the sugar cube on a small dish, then drizzle with the bitters, turning a few times so it's fully coated.\n\nStep 2 :\nDrop the cube into a champagne flute, then top up with the cognac. Slowly pour over the champagne.\n\nStep 3 :\nTwist the orange peel over to express the oils, then discard or loop around the stem of the glass.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Jessica Rabbit Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/JessicaRabbitCocktail.jpg",
+    ingredients: {
+      strawberry: "2",
+      tomato: "2 Cherry Tomatoes",
+      syrup: "10ml Agave Syrup",
+      lemon: "20ml Lime juice",
+      alcohol: "30ml Espadin Mezcal",
+      alcoholD1: "20ml Blanco Tequila",
+      fruits: "20ml Pineapple Juice",
+      ice: "For Colding",
+      herb: "Mint, to Garnish"
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPut the strawberries, tomatoes, agave and lime juice in the bottom of a cocktail shaker and muddle together. Add the mezcal, tequila and pineapple juice and fill with ice.\n\nStep 2 :\nShake hard to create a nice foam head on the drink and fine strain into a martini glass or coupette. Garnish with a mint sprig inserted into a cherry tomato.",
+    time: "5m",
+  ),
+  Meals(
+    name: "White Rabbit Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/WhiteRabbitCocktail.jpg",
+    ingredients: {
+      alcohol: "80ml Gin",
+      alcoholD1: "50ml amaretto",
+      cream: "50ml Double Cream",
+      lemon: "1 Teaspoon Lemon Curd",
+      vanilla: "0.25 Teaspoon Paste",
+      ice: "handful of it",
+      herb: "Edible Flowers",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPut the gin, amaretto, double cream, lemon curd and vanilla paste into a cocktail shaker with a handful of ice and shake until the outside of the shaker feels very cold. Strain into two small cocktail or coupe glasses and garnish with edible flowers before serving.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Valentine's Day cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/Valentine.jpg",
+    ingredients: {
+      fruits: "150ml Cranberry juice",
+      syrup: "1 Teaspoon Grenadine",
+      alcohol: "50ml Vodka",
+      ice: "handful of it",
+      lemon: "1 Lime wedge",
+      raspberry: "4",
+      alcoholD1: "Chilled Prosecco",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nMix the cranberry juice, grenadine and vodka together in a jug with a handful of ice. Or, do this in a cocktail shaker. Squeeze over the lime wedge and stir with a mixing spoon, or shake briefly if using a cocktail shaker.\n\nStep 2 :\nStrain the cocktail into two champagne glasses. Drop two raspberries into each glass, then top up with prosecco or sparkling wine to serve.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Cherry Bakewell Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/CherryBakewellCocktail.jpg",
+    ingredients: {
+      alcohol: "100ml Amaretto",
+      ice: "handful of it",
+      cherry: "50ml Cherry Cordial",
+      lemon: "1 Tablespoon Lemon juice",
+      syrup: "300ml Lemonade",
+      cherry: "Maraschino Cherries",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nFill two tall glasses with ice cubes. Combine the amaretto, cordial and lemon juice in a small jug, then divide between the glasses. Top with lemonade, then stir well. Garnish with a maraschino cherry, if you like.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Mulled Wine Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/MulledWineCocktail.jpg",
+    ingredients: {
+      sugar: "100g Muscovado Sugar",
+      powder: "1 Star Anise",
+      cinnamon: "1 Cinnamon Stick",
+      powderD1: "4 Cloves",
+      water: "150ml",
+      lemon: "1",
+      orange: "2 Clementines",
+      alcohol: "150ml Cointreau",
+      wine: "750ml Red Wine",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPut 100g light muscovado sugar in a pan with 1 star anise, 1 cinnamon stick, 4 cloves and 150ml water. Bring slowly to the boil, stirring to dissolve the sugar.\n\nStep 2 :\nSimmer for 2 mins, then pour into a large jug and leave to cool. Add 1 lemon and 2 clementines, both thinly sliced, to the jug along with 150ml Cointreau and a 750ml bottle light red wine, such as a Beaujolais. Stir well, then cover and chill for at least 2 hrs or overnight if you can.\n\nStep 2 :\nServe chilled or over ice, with a twist of orange zest and a star anise. If you’d like to serve a traditional warm mulled wine, there’s no need to chill – simply warm through without boiling and serve in heatproof glasses.",
+    time: "10m",
+  ),
+  Meals(
+    name: "Grasshopper Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/GrasshopperCocktail.jpg",
+    ingredients: {
+      ice: "handful of it",
+      alcohol: "25ml Crème de Menthe",
+      alcoholD1: "25ml White Crème de Cacao",
+      cream: "25ml Single Cream",
+      info: "To Garnish",
+      herb: "Mint",
+      chocolate: "25g Melted Chocolate",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nStart by making the garnish. Take a sprig of mint, strip off the leaves at the base and dip the stalk in the melted chocolate, holding the upper leaves gently. Leave to set on a plate or tray.\n\nStep 2 :Fill a cocktail shaker with ice then pour in the liqueurs and cream. Shake hard until the outside of the cocktail shaker is cold, then strain in to a cocktail glass or small coupe. Garnish with the chocolate-dipped sprig of mint.",
+    time: "5m",
+  ),
+  Meals(
+    name: "Prawn Cocktail",
+    difficulty: "Medium",
+    url: "assets/images/drinks/cocktail/PrawnCocktail.jpg",
+    ingredients: {
+      shrimp: "400g Cooked Prawn",
+      lettuce: "4 Little Gem Lettuces",
+      mayonnaise: "5 Heaped Tablespoon",
+      tomato: "5 Tablespoon Tomato Chutney",
+      sauce: "2 Teaspoon Worcestershire",
+      powder: "2 Teaspoon Horseradish",
+      sauceD1: "Tiny Splash of Tabasco",
+      lemon: "Squeeze of Lemon juice",
+      powderD1: "Paprika for Dusting",
+      herb: "4 Teaspoon snipped Chive",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nPeel all but four of the prawns (reserve these for the tops). Break the lettuces into individual leaves, then divide the leaves evenly between four small glass bowls. Sprinkle the prawns over the lettuce and season with black pepper.\n\nStep 2 :\nMix the mayonnaise, tomato chutney, Worcestershire sauce, horseradish and Tabasco together. Season to taste with lemon juice and salt and pepper, then spoon sparingly over the prawns. Dust the top with a little paprika and sprinkle with chives. Top with the remaining prawns and serve immediately. Delicious with brown bread.",
+    time: "25m",
+  ),
+  Meals(
+    name: "Bronx Cocktail",
+    difficulty: "Easy",
+    url: "assets/images/drinks/cocktail/BronxCocktail.jpg",
+    ingredients: {
+      alcohol: "50ml dry Gin",
+      alcoholD1: "25ml sweet Vermouth",
+      alcoholD2: "25ml dry Vermouth",
+      orange: "25ml Orange Juice",
+      ice: "For Cooling",
+    },
+    category: "Cocktail",
+    description:
+        "Step 1 :\nTip the gin, both vermouths, the orange juice and a large handful of ice into a cocktail shaker. Shake hard until the outside of the shaker feels very cold, then double strain the drink into a coupe or martini glass.\n\nStep 2 :\nTwist the strip of orange peel over the cocktail to express the oils, then drop it into the drink, or discard it if you prefer.",
+    time: "5m",
   ),
 ];
