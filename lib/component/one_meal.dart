@@ -111,7 +111,7 @@ class OneMeal extends StatelessWidget {
                       Text(
                         myMeals.description,
                         textAlign: TextAlign.justify,
-                        style: const TextStyle(height: 2),
+                        style: const TextStyle(height: 1.6),
                       )
                     ]),
               )
