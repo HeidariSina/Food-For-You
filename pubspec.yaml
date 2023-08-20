@@ -1,7 +1,7 @@
 name: meals
 description: A Recipe App Develped By Sina Heidari And Bahare Beheshti.
 publish_to: "none"
-version: 0.10.2
+version: 0.10.3
 
 environment:
   sdk: ">=2.19.4 <3.0.0"
@@ -112,6 +112,19 @@ flutter:
     - assets/images/snacks/bread/MincemeatBananaBread.jpg
     - assets/images/snacks/bread/IrishSodaBread.jpg
 
+    - assets/images/snacks/french/FrenchToast.jpg
+    - assets/images/snacks/french/Macarons.jpg
+    - assets/images/snacks/french/Croissants.jpg
+    - assets/images/snacks/french/Madeleines.jpg
+    - assets/images/snacks/french/Crepes.jpg
+    - assets/images/snacks/french/TarteTatin.jpg
+    - assets/images/snacks/french/ChinonAppleTarts.jpg
+    - assets/images/snacks/french/Souffle.jpg
+    - assets/images/snacks/french/MiniEclairs.jpg
+    - assets/images/snacks/french/Profiteroles.jpg
+    - assets/images/snacks/french/AnchovyPalmiers.jpg
+    - assets/images/snacks/french/Brie.jpg
+
     - assets/images/drinks/coffee/cappucino.jpg
     - assets/images/drinks/coffee/flat_white.jpg
     - assets/images/drinks/coffee/latte.jpg
@@ -186,6 +199,7 @@ flutter:
     - assets/svg/fennel.svg
     - assets/svg/fish.svg
     - assets/svg/flour.svg
+    - assets/svg/foodColour.svg
     - assets/svg/fruits.svg
     - assets/svg/garlic.svg
     - assets/svg/grape.svg

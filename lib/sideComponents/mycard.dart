@@ -49,6 +49,7 @@ class MyCard extends StatelessWidget {
             Text(
               meal.name,
               style: const TextStyle(color: Colors.white),
+              textAlign: TextAlign.center,
             ),
             Text(meal.category),
             Row(

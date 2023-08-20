@@ -41,6 +41,8 @@ Ingredients fennel = Ingredients("Fennel", "assets/svg/fennel.svg");
 Ingredients fish = Ingredients("Fish", "assets/svg/fish.svg");
 Ingredients flour = Ingredients("Flour", "assets/svg/flour.svg");
 Ingredients fruits = Ingredients("Fruits", "assets/svg/fruits.svg");
+Ingredients foodColour =
+    Ingredients("Food Colour", "assets/svg/foodColour.svg");
 Ingredients garlic = Ingredients("Garlic", "assets/svg/garlic.svg");
 Ingredients grape = Ingredients("Grape", "assets/svg/grape.svg");
 Ingredients hazelnut = Ingredients("Hazelnut", "assets/svg/hazelnut.svg");
@@ -94,6 +96,7 @@ Ingredients zaferan = Ingredients("Zaferan", "assets/svg/zaferan.svg");
 // information Ingredients
 Ingredients info = Ingredients("More Option", "assets/svg/info.svg");
 Ingredients infoD1 = Ingredients("More Option", "assets/svg/info.svg");
+Ingredients infoD2 = Ingredients("More Option", "assets/svg/info.svg");
 
 // duplicate Ingredients
 Ingredients lemonD1 = Ingredients("Lemon", "assets/svg/lemon.svg");
@@ -133,3 +136,8 @@ Ingredients syrupD1 = Ingredients("Syrup", "assets/svg/vinegar.svg");
 Ingredients syrupD2 = Ingredients("Syrup", "assets/svg/vinegar.svg");
 Ingredients orangeD1 = Ingredients("Orange", "assets/svg/orange.svg");
 Ingredients sauceD1 = Ingredients("Sauce", "assets/svg/sauce.svg");
+Ingredients wineD1 = Ingredients("Wine", "assets/svg/wine.svg");
+Ingredients wineD2 = Ingredients("Wine", "assets/svg/wine.svg");
+Ingredients creamD1 = Ingredients("Cream", "assets/svg/cream.svg");
+Ingredients eggD1 = Ingredients("Egg", "assets/svg/egg.svg");
+Ingredients flourD2 = Ingredients("Flour", "assets/svg/flour.svg");
