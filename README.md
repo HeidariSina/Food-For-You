@@ -1,7 +1,7 @@
 # Food For You
 
-This is a App Developed By Sina Heidari with help of Bahare Beheshti, Mohhamad Barabadi and Sara Heidari. <br/>
-In this app you cab found recipes about Main dishes, Snacks and even Drinks.<br/>
+This is a App Developed By Sina Heidari with help of Bahare Beheshti, Mohamad Barabadi and Sara Heidari. <br/>
+In this app you can found recipes about Main dishes, Snacks and even Drinks.<br/>
 Most of the recipes are from BBC Good Food website and Persian recipes are from iran-cuisine website
 
 ## Main Dish
