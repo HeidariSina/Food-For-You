@@ -107,6 +107,8 @@ class _MyMealsPage extends State<MyMealsPage> {
 
   @override
   Widget build(BuildContext context) {
+    Color color1 = Theme.of(context).colorScheme.primary;
+    Color color2 = Theme.of(context).colorScheme.onPrimary;
     return SafeArea(
       child: SingleChildScrollView(
         child: Container(
@@ -115,7 +117,7 @@ class _MyMealsPage extends State<MyMealsPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Drinks",
+              Text("Meals",
                   style: TextStyle(
                       fontSize: 30,
                       color: Theme.of(context).colorScheme.surface)),
@@ -158,10 +160,10 @@ class _MyMealsPage extends State<MyMealsPage> {
                   itemBuilder: (contex, index) {
                     if (_selectedindex == index) {
                       return MyCategoryCard(widget.category[index], true, index,
-                          changeSelectedIndex);
+                          changeSelectedIndex, color1);
                     } else {
                       return MyCategoryCard(widget.category[index], false,
-                          index, changeSelectedIndex);
+                          index, changeSelectedIndex, color1);
                     }
                   },
                   itemCount: widget.category.length,
@@ -180,16 +182,16 @@ class _MyMealsPage extends State<MyMealsPage> {
                   itemBuilder: (contex, index) {
                     if (_selectedMode == index) {
                       return MyCategoryCard(
-                          modes[index], true, index, changeMode);
+                          modes[index], true, index, changeMode, color1);
                     } else {
                       return MyCategoryCard(
-                          modes[index], false, index, changeMode);
+                          modes[index], false, index, changeMode, color1);
                     }
                   },
                   itemCount: modes.length,
                 ),
               ),
-              Text("Drinks :",
+              Text("Meals :",
                   style: TextStyle(
                       fontSize: 17,
                       color: Theme.of(context).colorScheme.primary)),
@@ -202,14 +204,12 @@ class _MyMealsPage extends State<MyMealsPage> {
                           children: [
                             Icon(
                               Icons.no_meals,
-                              color: Theme.of(context).colorScheme.surface,
+                              color: color1,
                               size: 70,
                             ),
                             Text(
                               "Sorry Nothing Found",
-                              style: TextStyle(
-                                  color: Theme.of(context).colorScheme.surface,
-                                  fontSize: 30),
+                              style: TextStyle(color: color1, fontSize: 30),
                             ),
                           ],
                         ),
@@ -227,7 +227,8 @@ class _MyMealsPage extends State<MyMealsPage> {
                         crossAxisSpacing: 10,
                         crossAxisCount: 2,
                         children: List.generate(_selectedMeals.length, (index) {
-                          return MealCard(_selectedMeals[index], index);
+                          return MealCard(
+                              _selectedMeals[index], index, color1, color2);
                         }),
                       ),
                     )

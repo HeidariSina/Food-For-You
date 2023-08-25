@@ -107,6 +107,8 @@ class _MyDrinkPage extends State<MyDrinkPage> {
 
   @override
   Widget build(BuildContext context) {
+    Color color1 = Theme.of(context).colorScheme.error;
+    Color color2 = Theme.of(context).colorScheme.onError;
     return SafeArea(
       child: SingleChildScrollView(
         child: Container(
@@ -115,15 +117,11 @@ class _MyDrinkPage extends State<MyDrinkPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Drinks",
-                  style: TextStyle(
-                      fontSize: 30,
-                      color: Theme.of(context).colorScheme.surface)),
+              Text("Drinks", style: TextStyle(fontSize: 30, color: color1)),
               Container(
                 height: 40,
                 decoration: BoxDecoration(
-                  border:
-                      Border.all(color: Theme.of(context).colorScheme.primary),
+                  border: Border.all(color: color1),
                   borderRadius: BorderRadius.circular(30),
                 ),
                 margin: const EdgeInsets.symmetric(vertical: 20),
@@ -132,23 +130,19 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                   onSubmitted: (_) => _sumbitInputFromSearch(),
                   decoration: InputDecoration(
                       contentPadding: const EdgeInsets.all(10),
-                      hintStyle: TextStyle(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontSize: 15),
+                      hintStyle: TextStyle(color: color1, fontSize: 15),
                       hintText: "Search",
-                      fillColor: Theme.of(context).colorScheme.primary,
+                      fillColor: color1,
                       prefixIcon: Icon(
                         Icons.search,
-                        color: Theme.of(context).colorScheme.primary,
+                        color: color1,
                       ),
                       border: const OutlineInputBorder(
                           borderSide: BorderSide.none)),
                 ),
               ),
               Text("Categories :",
-                  style: TextStyle(
-                      fontSize: 17,
-                      color: Theme.of(context).colorScheme.primary)),
+                  style: TextStyle(fontSize: 17, color: color1)),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 height: 35,
@@ -158,19 +152,17 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                   itemBuilder: (contex, index) {
                     if (_selectedindex == index) {
                       return MyCategoryCard(widget.category[index], true, index,
-                          changeSelectedIndex);
+                          changeSelectedIndex, color1);
                     } else {
                       return MyCategoryCard(widget.category[index], false,
-                          index, changeSelectedIndex);
+                          index, changeSelectedIndex, color1);
                     }
                   },
                   itemCount: widget.category.length,
                 ),
               ),
               Text("Difficulty :",
-                  style: TextStyle(
-                      fontSize: 17,
-                      color: Theme.of(context).colorScheme.primary)),
+                  style: TextStyle(fontSize: 17, color: color1)),
               Container(
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 height: 35,
@@ -180,19 +172,16 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                   itemBuilder: (contex, index) {
                     if (_selectedMode == index) {
                       return MyCategoryCard(
-                          modes[index], true, index, changeMode);
+                          modes[index], true, index, changeMode, color1);
                     } else {
                       return MyCategoryCard(
-                          modes[index], false, index, changeMode);
+                          modes[index], false, index, changeMode, color1);
                     }
                   },
                   itemCount: modes.length,
                 ),
               ),
-              Text("Drinks :",
-                  style: TextStyle(
-                      fontSize: 17,
-                      color: Theme.of(context).colorScheme.primary)),
+              Text("Drinks :", style: TextStyle(fontSize: 17, color: color1)),
               _selectedMeals.isEmpty
                   ? SizedBox(
                       height: MediaQuery.of(context).size.height * 0.4,
@@ -202,14 +191,12 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                           children: [
                             Icon(
                               Icons.no_meals,
-                              color: Theme.of(context).colorScheme.surface,
+                              color: color1,
                               size: 70,
                             ),
                             Text(
                               "Sorry Nothing Found",
-                              style: TextStyle(
-                                  color: Theme.of(context).colorScheme.surface,
-                                  fontSize: 30),
+                              style: TextStyle(color: color1, fontSize: 30),
                             ),
                           ],
                         ),
@@ -227,7 +214,8 @@ class _MyDrinkPage extends State<MyDrinkPage> {
                         crossAxisSpacing: 10,
                         crossAxisCount: 2,
                         children: List.generate(_selectedMeals.length, (index) {
-                          return MealCard(_selectedMeals[index], index);
+                          return MealCard(
+                              _selectedMeals[index], index, color1, color2);
                         }),
                       ),
                     )

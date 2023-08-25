@@ -63,21 +63,15 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          color: Colors.teal.shade700,
-          iconTheme: const IconThemeData(
-            color: Colors.white,
-          ),
-        ),
         fontFamily: "Dosis",
         colorScheme: ColorScheme(
             brightness: Brightness.light,
-            primary: Colors.teal.shade700,
-            onPrimary: Colors.teal.shade500,
-            secondary: Colors.black87,
-            onSecondary: Colors.black54,
-            error: Colors.red.shade800,
-            onError: Colors.red.shade500,
+            primary: Colors.teal.shade800,
+            onPrimary: Colors.teal.shade300,
+            secondary: Colors.blue.shade800,
+            onSecondary: Colors.blue.shade300,
+            error: Colors.orange.shade800,
+            onError: Colors.orange.shade300,
             background: Colors.white70,
             onBackground: Colors.white30,
             surface: Colors.teal,
@@ -114,34 +108,49 @@ class _MainAppState extends State<MainApp> {
           showSelectedLabels: false,
           showUnselectedLabels: false,
           iconSize: 25,
-          items: const <BottomNavigationBarItem>[
+          items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.home_outlined),
-              activeIcon: Icon(Icons.home, size: 30),
+              icon: const Icon(Icons.home_outlined),
+              activeIcon: Icon(
+                Icons.home,
+                size: 30,
+                color: Colors.grey.shade800,
+              ),
               label: "Home",
             ),
             BottomNavigationBarItem(
-              activeIcon: FaIcon(FontAwesomeIcons.wineGlass, size: 30),
-              icon: FaIcon(
+              activeIcon: FaIcon(
+                FontAwesomeIcons.wineGlass,
+                size: 30,
+                color: Colors.orange.shade700,
+              ),
+              icon: const FaIcon(
                 FontAwesomeIcons.wineGlassEmpty,
                 size: 22,
               ),
-              label: 'Saved',
+              label: 'Drinks',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.food_bank_outlined),
-              activeIcon: Icon(Icons.food_bank, size: 30),
-              label: 'search',
+              icon: const Icon(Icons.food_bank_outlined),
+              activeIcon: Icon(
+                Icons.food_bank,
+                size: 30,
+                color: Colors.teal.shade500,
+              ),
+              label: 'Meals',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.cake_outlined),
-              activeIcon: Icon(Icons.cake, size: 30),
-              label: 'bookmark',
+              icon: const Icon(Icons.cake_outlined),
+              activeIcon: Icon(
+                Icons.cake,
+                size: 30,
+                color: Colors.blue.shade500,
+              ),
+              label: 'Snacks',
             ),
           ],
           currentIndex: _outSideIndex,
-          selectedItemColor: Colors.teal.shade700,
-          unselectedItemColor: Colors.teal.shade500,
+          unselectedItemColor: Colors.black38,
           type: BottomNavigationBarType.shifting,
           elevation: 0.0,
           onTap: (int index) {

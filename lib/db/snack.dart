@@ -7,6 +7,7 @@ List<String> snackCategories = [
   "Bread",
   "Chocolate",
   "French",
+  "Tiramisu",
 ];
 
 List<Meals> mySnacks = [
@@ -416,7 +417,7 @@ List<Meals> mySnacks = [
   Meals(
     name: "Chocolate Molten Cakes",
     difficulty: "Easy",
-    url: "assets/images/snacks/chocolate/ChocolateTiffin.jpg",
+    url: "assets/images/snacks/chocolate/ChocolateMoltenCakes.jpg",
     ingredients: {
       butter: "100g",
       chocolate: "100g Dark",
@@ -459,7 +460,7 @@ List<Meals> mySnacks = [
   Meals(
     name: "Chocolate Macarons",
     difficulty: "Hard",
-    url: "assets/images/snacks/chocolate/ChocolateTiffin.jpg",
+    url: "assets/images/snacks/chocolate/ChocolateMacarons.jpg",
     ingredients: {
       sugar: "125g Icing",
       cocoa: "1 Tablespoon",
@@ -803,6 +804,126 @@ List<Meals> mySnacks = [
     description:
         "Step 1 :\nMix the flour, 1 tsp salt, caster sugar, yeast, milk and eggs together in a mixer using the dough attachment for 5 mins until the dough is smooth. Add the butter and mix for a further 4 mins on medium speed. Scrape the dough bowl and mix again for 1 min. Place the dough in a container, cover with cling film and leave in the fridge for at least 6 hrs before using.\n\nStep 2 :\nWrap the brie in the prosciutto and set aside. Turn out the dough onto a lightly floured surface. Roll into a 25cm circle. Place the wrapped brie in the middle of the circle and fold the edges in neatly. Put the parcel onto a baking tray lined with baking parchment and brush with beaten egg. Chill in the fridge for 30 mins, then brush again with beaten egg and chill for a further 30 mins. Leave to rise for 1 hr at room temperature. Heat oven to 200C/180C fan/gas 6, then bake for 22 mins. Serve warm.",
     time: "50m",
+  ),
+  Meals(
+    name: "Raspberry Tiramisu",
+    difficulty: "Easy",
+    url: "assets/images/snacks/tiramisu/RaspberryTiramisu.jpg",
+    ingredients: {
+      egg: "6 Yolks",
+      sugar: "175g",
+      cream: "300ml Double Cream",
+      cheese: "500g Mascarpone",
+      vanilla: "1 Tablespoon",
+      wine: "150ml Sweet Wine",
+      biscuit: "24 Sponge Fingers",
+      raspberry: "350g",
+      sugarD1: "Icing Sugar For Dust",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nPlace a heatproof bowl over a pan of simmering water with the egg yolks and the sugar in, whisk until pale, creamy and doubled in volume. Remove from the heat and whisk for another 1 min until cool.\n\nStep 2 :\nIn another bowl beat the cream, mascarpone and vanilla until combined, thick and creamy. Fold or very gently whisk this mixture into the creamy yolks.\n\nStep 3 :\nDip half the sponge fingers into the marsala and arrange over the bottom of a serving dish. Pour over half of the creamy mixture, then top with most of the raspberries. Repeat the layers, then finish by dotting over the remaining raspberries. Cover and chill for at least 2 hrs.\n\nStep 4 :\nDust the tiramisu with icing sugar just before serving in big bowls.",
+    time: "35m",
+  ),
+  Meals(
+    name: "Cappuccino Tiramisu",
+    difficulty: "Easy",
+    url: "assets/images/snacks/tiramisu/CappuccinoTiramisu.jpg",
+    ingredients: {
+      biscuit: "8 Sponge Fingers",
+      coffee: "Cold Coffee",
+      iceCream: "Baileys One",
+      cream: "142ml Double Cream",
+      sugar: "1 Tablespoon Icing",
+      alcohol: "3 Tablespoom",
+      chocolate: "Chocolate Flakes",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nPress the sponge fingers into four glasses. Pour on enough cold coffee to soak the sponge.\n\nStep 2 :\nAdd Baileys ice cream, double cream whipped with icing sugar and Baileys. Scatter with chocolate flakes.",
+    time: "15m",
+  ),
+  Meals(
+    name: "Tiramisu Cheesecake",
+    difficulty: "Medium",
+    url: "assets/images/snacks/tiramisu/TiramisuCheesecake.jpg",
+    ingredients: {
+      info: "For the Base",
+      butter: "80g",
+      chocolate: "300g Darks",
+      infoD1: "For the Chocolate Layer",
+      chocolateD1: "500g Milk Chocolate",
+      cream: "300ml Double Cream",
+      syrup: "100ml Tia Maria",
+      infoD2: "For the Cheesecake",
+      cheese: "300g Cream Cheese",
+      creamD1: "200ml Double Cream",
+      vanilla: "1 Teaspoon",
+      orange: "1",
+      sugar: "50g Icing",
+      cocoa: "To Serve",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nLine the base of a 23cm springform cake tin with baking parchment. Crush the biscuits as finely as possible in a food bag using a rolling pin, or in a food processor, and mix with the melted butter. Tip into the tin, pressing down to flatten and set aside in the fridge.\n\nStep 2 :\nFor the chocolate layer, tip the chocolate, cream and Tia Maria into a bowl and melt over a pan of simmering water. Once melted, quickly stir together and pour over the biscuit base, then chill in the fridge for at least 3 hrs, or until set.\n\nStep 3 :\nWhen the chocolate layer is set, beat the cream cheese, double cream, vanilla, orange and sugar together, then spread and swirl the mix evenly over the chocolate layer. Put the cake back in the fridge for a couple of hours or overnight. Can be made up to two days in advance and kept covered in the fridge.\n\nStep 4 :\nTo serve, remove from the fridge, sieve over the cocoa powder and sprinkle over the crushed coffee beans. Run a knife around the edge of the cheesecake and release from the tin and serve. For a neater finish, blowtorch the outside of the tin to release the sides.",
+    time: "40m",
+  ),
+  Meals(
+    name: "Sunshine Tiramisu",
+    difficulty: "Easy",
+    url: "assets/images/snacks/tiramisu/SunshineTiramisu.jpg",
+    ingredients: {
+      egg: "2",
+      sugar: "50g",
+      cheese: "250g Mascarpone",
+      cream: "150ml Double Cream",
+      wine: "125ml Marsala Wine",
+      biscuit: "175g Sponge Fingers",
+      fruits: "400g Peach",
+      biscuitD1: "50g Amaretti",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nUse an electric whisk to beat the egg yolks with half the sugar until the mixture is pale and moussey – this will take 3-4 mins. Beat the mascarpone in a large mixing bowl to loosen, then beat in the double cream until just combined. Scrape in the mousse mixture and beat everything together until smooth and light.\n\nStep 2 :\nClean the beaters, then whisk the egg whites in another bowl until stiff peaks hold on the end of the beaters. Tip in the remaining sugar and beat until glossy and stiff again. Use a big metal spoon to stir a third of this into the cream mixture, then gently fold in the rest.\n\nStep 3 :\nGet your serving dish or bowl ready, then put the Marsala in a shallow plate and dip in a few sponge fingers at a time so they are just soaked but not soggy. Layer half of the fingers evenly in your dish, then scatter over half the fruit. Top with half the cream mixture, then crumble over half the crunchy amaretti biscuits. Repeat the layers, but finish with the cream and save the other half of the biscuits. Cover and chill for a few hrs, or overnight.\n\nStep 4 :\nTo serve, crumble over the remaining biscuits, then spoon into bowls.",
+    time: "25m",
+  ),
+  Meals(
+    name: "Beer Tiramisu",
+    difficulty: "Easy",
+    url: "assets/images/snacks/tiramisu/BeerTiramisu.jpg",
+    ingredients: {
+      cheese: "250g Mascarpone",
+      vanilla: "1 Teaspoon",
+      alcohol: "330ml Beer",
+      cream: "150ml Single Cream",
+      sugar: "4 Tablespoon Icing",
+      biscuit: "16 Sponge Fingers",
+      cocoa: "To Serve",
+      chocolate: "To Serve",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nWhisk the mascarpone with the vanilla and 75ml of beer until everything is thoroughly mixed together. Whisk the cream with the icing sugar until smooth, then fold in the mascarpone mix.\n\nStep 2 :\nPour the remaining beer into a bowl (sweeten with more icing sugar if you like). Take one sponge finger at a time and dip it in to the beer. Set aside and continue with the remaining biscuits.\n\nStep 3 :\nLine four serving glasses with four sponge fingers, breaking them in half if you need to. Spoon the mascarpone mix in until you reach the top of the glass. Refrigerate overnight to allow the flavours to infuse.\n\nStep 4 :\nRemove the beeramisu from the fridge. Grate a little chocolate over the top of each one and dust with sifted cocoa powder to serve.",
+    time: "10m",
+  ),
+  Meals(
+    name: "Best Ever Tiramisu",
+    difficulty: "Easy",
+    url: "assets/images/snacks/tiramisu/BestEverTiramisu.jpg",
+    ingredients: {
+      cream: "400ml",
+      cheese: "250g Mascarpone",
+      wine: "75ml Marsala",
+      sugar: "5 Tablespoon",
+      coffee: "300ml Coffee",
+      biscuit: "175g Sponge Fingers",
+      chocolate: "25g Dark",
+      cocoa: "2 Teaspoon",
+    },
+    category: "Tiramisu",
+    description:
+        "Step 1 :\nPut the double cream, mascarpone, marsala and golden caster sugar in a large bowl.\n\nStep 2 :\nWhisk until the cream and mascarpone have completely combined and have the consistency of thickly whipped cream.\n\nStep 3 :\nPour the coffee into a shallow dish. Dip in a few of the sponge fingers at a time, turning for a few seconds until they are nicely soaked, but not soggy. Layer these in a dish until you’ve used half the sponge fingers, then spread over half of the creamy mixture.\n\nStep 4 :\nUsing the coarse side of the grater, grate over most of the dark chocolate. Then repeat the layers (you should use up all the coffee), finishing with the creamy layer.\n\nStep 5 :\nCover and chill for a few hours or overnight. Will keep in the fridge for up to two days.\n\nStep 6 :\nTo serve, dust with the cocoa powder and grate over the remainder of the chocolate.",
+    time: "30m",
   ),
 ];
 

@@ -5,7 +5,9 @@ class MyCategoryCard extends StatelessWidget {
   final int index;
   final bool isSelected;
   final Function func;
-  const MyCategoryCard(this.title, this.isSelected, this.index, this.func,
+  final Color color1;
+  const MyCategoryCard(
+      this.title, this.isSelected, this.index, this.func, this.color1,
       {super.key});
 
   @override
@@ -14,10 +16,8 @@ class MyCategoryCard extends StatelessWidget {
       width: 100,
       margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
-          color: isSelected
-              ? Theme.of(context).colorScheme.primary
-              : Theme.of(context).colorScheme.onSurface,
-          border: Border.all(color: Theme.of(context).colorScheme.primary),
+          color: isSelected ? color1 : Theme.of(context).colorScheme.onSurface,
+          border: Border.all(color: color1),
           borderRadius: BorderRadius.circular(20)),
       child: TextButton(
         onPressed: () => func(index),
@@ -26,7 +26,7 @@ class MyCategoryCard extends StatelessWidget {
           style: TextStyle(
               color: isSelected
                   ? Theme.of(context).colorScheme.onSurface
-                  : Theme.of(context).colorScheme.primary),
+                  : color1),
         ),
       ),
     );

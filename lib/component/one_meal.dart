@@ -7,14 +7,17 @@ import '../class/meals.dart';
 
 class OneMeal extends StatelessWidget {
   final Meals myMeals;
+  final Color color1;
 
-  const OneMeal(this.myMeals, {super.key});
+  const OneMeal(this.myMeals, this.color1, {super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        backgroundColor: color1,
+        iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
           myMeals.name,
           style: const TextStyle(color: Colors.white),
@@ -40,7 +43,7 @@ class OneMeal extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
                 decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
+                  color: color1,
                 ),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

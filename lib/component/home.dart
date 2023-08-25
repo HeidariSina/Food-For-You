@@ -7,7 +7,7 @@ import 'dart:math';
 import '../db/drink.dart';
 import '../db/meals.dart';
 import '../db/snack.dart';
-import '../sideComponents/myCard.dart';
+import '../sideComponents/homepage_card.dart';
 
 class MyHomePage extends StatelessWidget {
   final Function func;
@@ -20,9 +20,13 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var random = Random();
     int randomNumber;
+    Color color1;
+    Color color2;
     List<Meals> homePageMeals;
     // BreakFast
     if (nowHour >= 6 && nowHour < 10) {
+      color1 = Theme.of(context).colorScheme.primary;
+      color2 = Theme.of(context).colorScheme.onPrimary;
       timeOfDay = mainDishCategories[1];
       secIndex = 1;
       index = 2;
@@ -34,6 +38,8 @@ class MyHomePage extends StatelessWidget {
     } // Lunch Or Dinner
     else if ((nowHour >= 12 && nowHour < 15) ||
         (nowHour >= 19 && nowHour <= 21)) {
+      color1 = Theme.of(context).colorScheme.primary;
+      color2 = Theme.of(context).colorScheme.onPrimary;
       randomNumber = random.nextInt(mainDishCategories.length - 2) + 2;
       timeOfDay = mainDishCategories[randomNumber];
       secIndex = randomNumber;
@@ -47,6 +53,8 @@ class MyHomePage extends StatelessWidget {
     else if ((nowHour >= 10 && nowHour < 11) ||
         (nowHour >= 15 && nowHour < 17) ||
         (nowHour >= 22 || nowHour < 1)) {
+      color1 = Theme.of(context).colorScheme.secondary;
+      color2 = Theme.of(context).colorScheme.onSecondary;
       randomNumber = random.nextInt(snackCategories.length - 1) + 1;
       timeOfDay = snackCategories[randomNumber];
       secIndex = randomNumber;
@@ -58,6 +66,8 @@ class MyHomePage extends StatelessWidget {
       ).toList();
     } // Drinks
     else {
+      color1 = Theme.of(context).colorScheme.error;
+      color2 = Theme.of(context).colorScheme.onError;
       randomNumber = random.nextInt(drinkCategories.length - 1) + 1;
       timeOfDay = drinkCategories[randomNumber];
       secIndex = randomNumber;
@@ -81,7 +91,7 @@ class MyHomePage extends StatelessWidget {
                 fontFamily: "Lora",
                 fontSize: 30,
                 letterSpacing: 1,
-                color: Colors.teal[700],
+                color: color1,
               ),
             ),
             Row(
@@ -92,16 +102,14 @@ class MyHomePage extends StatelessWidget {
                   "Popular $timeOfDay Recipes",
                   style: TextStyle(
                     fontSize: 20,
-                    color: Theme.of(context).colorScheme.primary,
+                    color: color1,
                   ),
                 ),
                 TextButton(
                   onPressed: () => func(index, secIndex),
                   child: Text(
                     "View All",
-                    style: TextStyle(
-                        fontSize: 18,
-                        color: Theme.of(context).colorScheme.primary),
+                    style: TextStyle(fontSize: 18, color: color1),
                   ),
                 ),
               ],
@@ -115,9 +123,11 @@ class MyHomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (contex, index) {
                   if (index == 0) {
-                    return (MyCard(homePageMeals[index], true, index));
+                    return (MyCard(
+                        homePageMeals[index], true, index, color1, color2));
                   } else {
-                    return (MyCard(homePageMeals[index], false, index));
+                    return (MyCard(
+                        homePageMeals[index], false, index, color1, color2));
                   }
                 },
                 itemCount: 4,

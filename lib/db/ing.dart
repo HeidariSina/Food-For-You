@@ -23,6 +23,7 @@ Ingredients brownSugar =
     Ingredients("Brown Sugar", "assets/svg/brown_sugar.svg");
 Ingredients butter = Ingredients("Butter", "assets/svg/butter.svg");
 Ingredients cabbage = Ingredients("Cabbage", "assets/svg/cabbage.svg");
+Ingredients cake = Ingredients("Cake", "assets/svg/cake.svg");
 Ingredients carrot = Ingredients("Carrot", "assets/svg/carrot.svg");
 Ingredients cheese = Ingredients("Cheese", "assets/svg/cheese.svg");
 Ingredients cherry = Ingredients("Cherry", "assets/svg/cherry.svg");
@@ -141,3 +142,8 @@ Ingredients wineD2 = Ingredients("Wine", "assets/svg/wine.svg");
 Ingredients creamD1 = Ingredients("Cream", "assets/svg/cream.svg");
 Ingredients eggD1 = Ingredients("Egg", "assets/svg/egg.svg");
 Ingredients flourD2 = Ingredients("Flour", "assets/svg/flour.svg");
+Ingredients biscuitD1 = Ingredients("Biscuit", "assets/svg/biscuit.svg");
+Ingredients oliveOilD1 = Ingredients("Olive Oil", "assets/svg/oliveOil.svg");
+Ingredients backingPowderD1 =
+    Ingredients("Backing Powder", "assets/svg/backing_powder.svg");
+Ingredients meatD1 = Ingredients("Meat", "assets/svg/meat.svg");

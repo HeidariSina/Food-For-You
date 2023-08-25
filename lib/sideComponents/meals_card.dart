@@ -6,7 +6,9 @@ import '../class/meals.dart';
 class MealCard extends StatelessWidget {
   final Meals meal;
   final int index;
-  const MealCard(this.meal, this.index, {super.key});
+  final Color color1;
+  final Color color2;
+  const MealCard(this.meal, this.index, this.color1, this.color2, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,14 +19,20 @@ class MealCard extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.45,
         height: 500,
         decoration: BoxDecoration(
-            color: Theme.of(context).colorScheme.primary,
-            border: Border.all(color: Theme.of(context).colorScheme.primary),
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: <Color>[color1, color2],
+            ),
             borderRadius: BorderRadius.circular(20)),
         child: ElevatedButton(
-          style: const ButtonStyle(elevation: MaterialStatePropertyAll(0)),
+          style: const ButtonStyle(
+              elevation: MaterialStatePropertyAll(0),
+              backgroundColor:
+                  MaterialStatePropertyAll(Color.fromRGBO(0, 0, 0, 0))),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => OneMeal(meal)));
+                MaterialPageRoute(builder: (context) => OneMeal(meal, color1)));
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,

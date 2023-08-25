@@ -165,6 +165,24 @@ flutter:
     - assets/images/drinks/cocktail/PrawnCocktail.jpg
     - assets/images/drinks/cocktail/BronxCocktail.jpg
 
+    - assets/images/snacks/tiramisu/RaspberryTiramisu.jpg
+    - assets/images/snacks/tiramisu/CappuccinoTiramisu.jpg
+    - assets/images/snacks/tiramisu/TiramisuCheesecake.jpg
+    - assets/images/snacks/tiramisu/SunshineTiramisu.jpg
+    - assets/images/snacks/tiramisu/BeerTiramisu.jpg
+    - assets/images/snacks/tiramisu/BestEverTiramisu.jpg
+
+    - assets/images/meals/sandwich/CapreseSandwich.jpg
+    - assets/images/meals/sandwich/PulledPorkSandwich.jpg
+    - assets/images/meals/sandwich/PanuozzoSandwich.jpg
+    - assets/images/meals/sandwich/FriedChickenSandwich.jpg
+    - assets/images/meals/sandwich/EggCressSandwich.jpg
+    - assets/images/meals/sandwich/SteakSandwich.jpg
+    - assets/images/meals/sandwich/EggMayoSandwiches.jpg
+    - assets/images/meals/sandwich/PloughmanSandwich.jpg
+    - assets/images/meals/sandwich/ClubSandwich.jpg
+    - assets/images/meals/sandwich/AllSandwich.jpg
+
     - assets/svg/alcohol.svg
     - assets/svg/apple.svg
     - assets/svg/backing_powder.svg
@@ -182,6 +200,7 @@ flutter:
     - assets/svg/brown_sugar.svg
     - assets/svg/butter.svg
     - assets/svg/cabbage.svg
+    - assets/svg/cake.svg
     - assets/svg/carrot.svg
     - assets/svg/cheese.svg
     - assets/svg/cherry.svg
